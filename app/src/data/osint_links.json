@@ -1,0 +1,4054 @@
+{
+  "AF": {
+    "name": "Afghanistan",
+    "lat": 33.93,
+    "lng": 67.71,
+    "links": [
+      {
+        "title": "Central Business Registry",
+        "url": "http://203.215.33.115/CompanyVerification/Pages/BuReVerification.aspx"
+      }
+    ]
+  },
+  "AFRICA": {
+    "name": "Africa (General)",
+    "lat": 8.78,
+    "lng": 34.51,
+    "links": [
+      {
+        "title": "African Gazettes",
+        "url": "https://gazettes.africa/"
+      },
+      {
+        "title": "Caselaw, legislation and journals",
+        "url": "https://africanlii.org/"
+      },
+      {
+        "title": "Different datasets collection",
+        "url": "https://www.aiddata.org"
+      },
+      {
+        "title": "Startme Investigation tools list",
+        "url": "https://start.me/p/KMAbkB/osint-south-africa"
+      }
+    ]
+  },
+  "AL": {
+    "name": "Albania",
+    "lat": 41.15,
+    "lng": 20.17,
+    "links": [
+      {
+        "title": "geoportal.asig.gov.al",
+        "url": "https://geoportal.asig.gov.al/map/?fc_name=alb_p_asig&auto=true"
+      },
+      {
+        "title": "Supreme Court of the Republic of Albania (Civil case)",
+        "url": "http://www.gjykata.gov.al/gjykata-e-lart%C3%AB/gjykata-e-lart%C3%AB/c%C3%ABshtjet-gjyq%C3%ABsore/c%C3%ABshtjet-civile/"
+      },
+      {
+        "title": "Supreme Court of the Republic of Albania (Criminal cases)",
+        "url": "http://www.gjykata.gov.al/gjykata-e-lart%C3%AB/gjykata-e-lart%C3%AB/c%C3%ABshtjet-gjyq%C3%ABsore/c%C3%ABshtjet-penale/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://albaniayp.com/"
+      }
+    ]
+  },
+  "DZ": {
+    "name": "Algeria",
+    "lat": 28.03,
+    "lng": 1.66,
+    "links": [
+      {
+        "title": "sidjilcom.cnrc.dz",
+        "url": "https://sidjilcom.cnrc.dz/"
+      },
+      {
+        "title": "Yellow pages",
+        "url": "http://algeriayp.com/"
+      }
+    ]
+  },
+  "AO": {
+    "name": "Angola",
+    "lat": -11.2,
+    "lng": 17.87,
+    "links": [
+      {
+        "title": "National Cadaster Map (access by request?)",
+        "url": "https://mitrelli.com/projects/national-cadaster/"
+      }
+    ]
+  },
+  "AQ": {
+    "name": "Antarctica",
+    "lat": -75.25,
+    "lng": 0.0,
+    "links": [
+      {
+        "title": "List of publically available Antarctic datasets (topography, ice velocity, grounding line etc)",
+        "url": "http://www.antarcticglaciers.org/antarctica-2/antarctic-datasets/"
+      },
+      {
+        "title": "Reference Elevation Model of Antarctica (REMA)",
+        "url": "https://www.pgc.umn.edu/data/rema/"
+      }
+    ]
+  },
+  "AG": {
+    "name": "Antigua and Barbuda",
+    "lat": 17.06,
+    "lng": -61.8,
+    "links": [
+      {
+        "title": "abipco.gov.ag",
+        "url": "https://abipco.gov.ag/"
+      }
+    ]
+  },
+  "AR": {
+    "name": "Argentina",
+    "lat": -38.42,
+    "lng": -63.62,
+    "links": [
+      {
+        "title": "argentina.gob.ar",
+        "url": "https://www.argentina.gob.ar/aaip/datospersonales/reclama"
+      },
+      {
+        "title": "Argentina White/Yellow Pages",
+        "url": "http://amarillas.emol.com/home"
+      },
+      {
+        "title": "Court Search",
+        "url": "https://www.cij.gov.ar/buscador-de-fallos.html"
+      },
+      {
+        "title": "94-th General Assembley Committee Search",
+        "url": "https://commongroundar.org/committees/"
+      }
+    ]
+  },
+  "AM": {
+    "name": "Armenia",
+    "lat": 40.07,
+    "lng": 45.04,
+    "links": [
+      {
+        "title": "e-cadastre.am",
+        "url": "https://www.e-cadastre.am/customer/login/map/1"
+      },
+      {
+        "title": "petekamutner.am",
+        "url": "http://www.petekamutner.am/tsOS_Taxpayers.aspx"
+      },
+      {
+        "title": "Legal information system of Armenia",
+        "url": "https://www.arlis.am/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://armeniayp.com/"
+      }
+    ]
+  },
+  "AU": {
+    "name": "Australia",
+    "lat": -25.27,
+    "lng": 133.78,
+    "links": [
+      {
+        "title": "Startme Australian OSINT tools list",
+        "url": "https://start.me/p/L10kJ6/australian-osint"
+      },
+      {
+        "title": "planningportal.nsw.gov.au",
+        "url": "https://www.planningportal.nsw.gov.au/spatialviewer/#/find-a-property/address"
+      },
+      {
+        "title": "abr.business.gov.au",
+        "url": "https://abr.business.gov.au/Search/"
+      },
+      {
+        "title": "anytrip.com.au",
+        "url": "https://anytrip.com.au/"
+      },
+      {
+        "title": "recordsearch.naa.gov.au",
+        "url": "https://recordsearch.naa.gov.au/"
+      },
+      {
+        "title": "Australian White  Pages",
+        "url": "http://www.whitepages.com.au/"
+      },
+      {
+        "title": "Australian Yellow Pages",
+        "url": "http://www.yellowpages.com.au/"
+      },
+      {
+        "title": "ABN Lookup",
+        "url": "https://abr.business.gov.au"
+      },
+      {
+        "title": "Planning Alerts. Property Search",
+        "url": "https://www.planningalerts.org.au/"
+      },
+      {
+        "title": "ABN Loookup",
+        "url": "https://abr.business.gov.au/"
+      },
+      {
+        "title": "Person Lookup Australia",
+        "url": "https://personlookup.com.au/"
+      },
+      {
+        "title": "Australian Census Records",
+        "url": "https://guides.slv.vic.gov.au/earlycensus/findpeople"
+      },
+      {
+        "title": "Public records search",
+        "url": "https://www.publicrecords.com.au/"
+      },
+      {
+        "title": "Birth deaths and marriage records",
+        "url": "https://www.nla.gov.au/research-guides/australian-birth-death-and-marriage-records"
+      },
+      {
+        "title": "Licensed Trades",
+        "url": "https://www.licensedtrades.com.au/"
+      },
+      {
+        "title": "Public Toilets Map",
+        "url": "https://toiletmap.gov.au/"
+      },
+      {
+        "title": "Death notices search (RyersonIndex)",
+        "url": "http://ryersonindex.org/search.php"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.australiayp.com/"
+      },
+      {
+        "title": "Open Politics Database Search",
+        "url": "https://openpolitics.au/search"
+      },
+      {
+        "title": "Medical registry",
+        "url": "https://www.medicalboard.gov.au/~/link.aspx?_id=b19bed3ca4d34c86a4e692db96f77eb8&_z=z"
+      },
+      {
+        "title": "National registry of VET",
+        "url": "https://training.gov.au/Search/SearchOrganisation"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://rego.act.gov.au/regosoawicket/public/reg/FindRegistrationPage;jsessionid=3B9EC78A65CDC33B78D99605CFE6E22E?0"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://www.service.nsw.gov.au/transaction/check-vehicle-registration"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://nt.gov.au/driving/rego/existing-nt-registration/rego-check"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://www.service.transport.qld.gov.au/checkrego/public/Welcome.xhtml?dswid=-6846"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://www.sa.gov.au/topics/driving-and-transport/registration/vehicle-registration/check-registration-expiry"
+      },
+      {
+        "title": "Live Webcams",
+        "url": "https://webcamsydney.com/"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://www.transport.tas.gov.au/MRSWebInterface/public/regoLookup/registrationLookup.jsf"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://www.vicroads.vic.gov.au/registration/buy-sell-or-transfer-a-vehicle/check-vehicle-registration"
+      },
+      {
+        "title": "Venicle Registration Search",
+        "url": "https://www.transport.wa.gov.au/dotdirect/dotdirect.asp"
+      }
+    ]
+  },
+  "AT": {
+    "name": "Austria",
+    "lat": 47.52,
+    "lng": 14.55,
+    "links": [
+      {
+        "title": "Arctic Traits Database",
+        "url": "https://www.univie.ac.at/arctictraits/"
+      },
+      {
+        "title": "firmenabc.at",
+        "url": "https://www.firmenabc.at/"
+      },
+      {
+        "title": "Austria Yellow Pages",
+        "url": "http://www.herold.at/"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "http://austriayp.com/"
+      }
+    ]
+  },
+  "AZ": {
+    "name": "Azerbaijan",
+    "lat": 40.14,
+    "lng": 47.58,
+    "links": [
+      {
+        "title": "e-taxes.gov.az",
+        "url": "https://www.e-taxes.gov.az/ebyn/commersialChecker.jsp"
+      },
+      {
+        "title": "Azerbaijan electronic courts system",
+        "url": "https://e-mehkeme.gov.az/Public/Cases?courtid="
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://azerbaijanyp.com/"
+      }
+    ]
+  },
+  "BS": {
+    "name": "Bahamas",
+    "lat": 25.03,
+    "lng": -77.4,
+    "links": [
+      {
+        "title": "bahamas.gov.bs",
+        "url": "https://www.bahamas.gov.bs/wps/myportal/public/rgd/company/company-search"
+      }
+    ]
+  },
+  "BH": {
+    "name": "Bahrain",
+    "lat": 26.07,
+    "lng": 50.56,
+    "links": [
+      {
+        "title": "Bahrain Yellow Pages",
+        "url": "http://www.bahrainyellowpages.com.bh/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.bahrainyellow.com/"
+      }
+    ]
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "lat": 23.68,
+    "lng": 90.36,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.bangladeshyp.com/"
+      }
+    ]
+  },
+  "BB": {
+    "name": "Barbados",
+    "lat": 13.19,
+    "lng": -59.54,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.bbyellow.com/"
+      }
+    ]
+  },
+  "BY": {
+    "name": "Belarus",
+    "lat": 53.71,
+    "lng": 27.95,
+    "links": [
+      {
+        "title": "map.nca.by",
+        "url": "https://map.nca.by/"
+      },
+      {
+        "title": "tsouz.belgiss.by",
+        "url": "https://tsouz.belgiss.by/#!/tsouz/certifs"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelo.by/"
+      },
+      {
+        "title": "PUBLIC DATABASE OF DOMESTIC POLITICALLY EXPOSED PERSONS OF RUSSIA AND BELARUS",
+        "url": "https://rupep.org/en/"
+      },
+      {
+        "title": "Mirotvoretz. Database of people who have committed crimes against Ukraine s national security (citizens of Belarus, Russia and other countries).",
+        "url": "https://myrotvorets.center/criminal/"
+      }
+    ]
+  },
+  "BE": {
+    "name": "Belgium",
+    "lat": 50.5,
+    "lng": 4.47,
+    "links": [
+      {
+        "title": "kbopub.economie.fgov.be",
+        "url": "https://kbopub.economie.fgov.be/kbopub/zoeknaamfonetischform.html"
+      },
+      {
+        "title": "Belgium White Pages",
+        "url": "http://www.1207.be/"
+      },
+      {
+        "title": "Golden Pages Belgium",
+        "url": "http://www.pagesdor.be/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://www.goudengids.be/"
+      },
+      {
+        "title": "Infobel Belgium Telephone Directory",
+        "url": "http://www.infobel.be"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://belgiumyp.com/"
+      },
+      {
+        "title": "Look inside the web of connections between companies, individuals and politicians in Belgium",
+        "url": "https://openthebox.be/search"
+      },
+      {
+        "title": "Central Balance Sheet Office Databases (public accounting)",
+        "url": "https://www.nbb.be/en/central-balance-sheet-office"
+      },
+      {
+        "title": "National regisry of translators/interpreters",
+        "url": "https://justsearch.just.fgov.be/national-registry-search/translator"
+      }
+    ]
+  },
+  "BZ": {
+    "name": "Belize",
+    "lat": 17.19,
+    "lng": -88.5,
+    "links": [
+      {
+        "title": "companysearch.bz",
+        "url": "https://companysearch.bz/public_search/"
+      }
+    ]
+  },
+  "BJ": {
+    "name": "Benin",
+    "lat": 9.31,
+    "lng": 2.32,
+    "links": [
+      {
+        "title": "Benin Business Directory",
+        "url": "http://benin.afrium.com/"
+      }
+    ]
+  },
+  "BT": {
+    "name": "Bhutan",
+    "lat": 27.51,
+    "lng": 90.43,
+    "links": [
+      {
+        "title": "National Land Commission Secretariat maps (access by request)",
+        "url": "https://www.nlcs.gov.bt/?page_id=203"
+      },
+      {
+        "title": "Goverment telephones directory #1",
+        "url": "https://www.bt.bt/forms/Telephone.pdf"
+      },
+      {
+        "title": "Goverment telephone directory #2",
+        "url": "http://www.chhukha.gov.bt/telephone-directory"
+      }
+    ]
+  },
+  "BO": {
+    "name": "Bolivia",
+    "lat": -16.29,
+    "lng": -63.59,
+    "links": [
+      {
+        "title": "Bolivia Yellow Pages",
+        "url": "http://bolivia.paginasamarillas.com/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.boliviayp.com/"
+      }
+    ]
+  },
+  "BA": {
+    "name": "Bosnia and Herzegovina",
+    "lat": 43.92,
+    "lng": 17.68,
+    "links": [
+      {
+        "title": "search.bisnode.rs",
+        "url": "https://search.bisnode.rs/search/?c=ba&q="
+      }
+    ]
+  },
+  "BW": {
+    "name": "Botswana",
+    "lat": -22.33,
+    "lng": 24.68,
+    "links": [
+      {
+        "title": "Business search",
+        "url": "https://www.localbotswana.com/"
+      }
+    ]
+  },
+  "BR": {
+    "name": "Brazil",
+    "lat": -14.24,
+    "lng": -51.93,
+    "links": [
+      {
+        "title": "National Bank of Arrest Warrants",
+        "url": "https://portalbnmp.cnj.jus.br/#/pesquisa-peca%23"
+      },
+      {
+        "title": "Court search",
+        "url": "https://www.jusbrasil.com.br/"
+      },
+      {
+        "title": "People and business search",
+        "url": "https://www.escavador.com/"
+      },
+      {
+        "title": "CPF/CNJP number search",
+        "url": "https://www.situacao-cadastral.com"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://brazilyello.com/"
+      }
+    ]
+  },
+  "BN": {
+    "name": "Brunei",
+    "lat": 4.54,
+    "lng": 114.73,
+    "links": [
+      {
+        "title": "Ministry of development maps (access by request)",
+        "url": "http://www.mod.gov.bn/survey/SitePages/Peta.aspx"
+      }
+    ]
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "lat": 42.73,
+    "lng": 25.49,
+    "links": [
+      {
+        "title": "Phone number and adress search",
+        "url": "https://www.vivacom.bg/bg/residential/polezni-syveti/ukazatel/telefonni-nomera"
+      },
+      {
+        "title": "Bulgarian eGOV open portal. Info regarding companies and people",
+        "url": "https://data.egov.bg/"
+      },
+      {
+        "title": "Registryagency. Commercial and non/profit legal entities",
+        "url": "https://portal.registryagency.bg/en/commercial-register"
+      },
+      {
+        "title": "Papagal. Retrieves information regarding people and companies",
+        "url": "https://papagal.bg/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://yellowpages.bg/bg/"
+      },
+      {
+        "title": "Sladur - old and popular dating site",
+        "url": "http://www.sladur.com/"
+      }
+    ]
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "lat": 12.24,
+    "lng": -1.56,
+    "links": [
+      {
+        "title": "Maps of National Observatory of the Territorial Economy",
+        "url": "http://www.onet.gov.bf/Nos-cartes?page=1"
+      }
+    ]
+  },
+  "BI": {
+    "name": "Burundi",
+    "lat": -3.37,
+    "lng": 29.92,
+    "links": [
+      {
+        "title": "Tourism map from Geomatic Centralization Office",
+        "url": "https://sp-bcg.gov.bi/siteTouristique/#8/-3.457/29.793"
+      }
+    ]
+  },
+  "CV": {
+    "name": "Cabo Verde",
+    "lat": 16.0,
+    "lng": -24.01,
+    "links": [
+      {
+        "title": "Pagina Amarales Cabo Verde",
+        "url": "https://www.paginasamarelas.cv/en"
+      }
+    ]
+  },
+  "KH": {
+    "name": "Cambodia",
+    "lat": 12.57,
+    "lng": 104.99,
+    "links": [
+      {
+        "title": "Cambodia",
+        "url": "http://cambodiayp.com/"
+      }
+    ]
+  },
+  "CM": {
+    "name": "Cameroon",
+    "lat": 7.37,
+    "lng": 12.35,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "https://portals.landfolio.com/Cameroon/en/"
+      },
+      {
+        "title": "Business List",
+        "url": "http://businesslist.co.cm/"
+      }
+    ]
+  },
+  "CA": {
+    "name": "Canada",
+    "lat": 56.13,
+    "lng": -106.35,
+    "links": [
+      {
+        "title": "Business Registry Search",
+        "url": "https://www.servicealberta.ca/find-if-business-is-licenced.cfm"
+      },
+      {
+        "title": "Municipal Property Assesments",
+        "url": "https://www.alberta.ca/municipal-property-assessment-overview.aspx"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://www.bcregistry.ca/business/auth/home/decide-business"
+      },
+      {
+        "title": "Property Assesments",
+        "url": "https://www.bcassessment.ca/"
+      },
+      {
+        "title": "Court search",
+        "url": "https://www.bccourts.ca/index.aspx/"
+      },
+      {
+        "title": "Dentists license lookup",
+        "url": "https://www.cdsbc.org/home/registrant-lookup#/lookup/dentists"
+      },
+      {
+        "title": "BC Seacurity License Verification",
+        "url": "https://justice.gov.bc.ca/security/utilities/"
+      },
+      {
+        "title": "Court Services Online (CSO) provides access to the public court record including the Provincial Court ticket records and Provincial Court criminal records.",
+        "url": "https://justice.gov.bc.ca/cso/esearch/criminal/partySearch.do"
+      },
+      {
+        "title": "Startme Canadian osint tools list",
+        "url": "https://start.me/p/aLe0vp/osint-resources-in-canada"
+      },
+      {
+        "title": "White Pages 411numbers-canada.com",
+        "url": "https://411numbers-canada.com/?__cf_chl_jschl_tk__=z1m1CStxKK6fBcZJE7KJ.5GE8DDgd0Sgtj06O79xDlc-1636385313-0-gaNycGzNCOU"
+      },
+      {
+        "title": "Free People Search mobile.canada411.ca",
+        "url": "http://mobile.canada411.ca"
+      },
+      {
+        "title": "Find Postal code",
+        "url": "https://www.canadapost-postescanada.ca/info/mc/personal/postalcode/fpc.jsf"
+      },
+      {
+        "title": "Trademarks database",
+        "url": "https://www.ic.gc.ca/app/opic-cipo/trdmrks/srch/home?lang=eng"
+      },
+      {
+        "title": "Patents database",
+        "url": "https://www.ic.gc.ca/opic-cipo/cpd/eng/search/basic.html?wt_src=cipo-patent-main"
+      },
+      {
+        "title": "Public Records Search",
+        "url": "https://publicrecords.searchsystems.net/Canada_Free_Public_Records/"
+      },
+      {
+        "title": "Business registry search",
+        "url": "https://beta.canadasbusinessregistries.ca/search"
+      },
+      {
+        "title": "Maps archive",
+        "url": "https://www.nrcan.gc.ca/earth-sciences/geography/atlas-canada/explore-our-maps/16836"
+      },
+      {
+        "title": "Canadian RCMP Firearms Reference Table",
+        "url": "https://www.armalytics.ca/"
+      },
+      {
+        "title": "Collection of topographic maps of Canada",
+        "url": "https://atlas.gc.ca/toporama/en/index.html"
+      },
+      {
+        "title": "Locations of tower sites for each licensed Canadian wireless provider",
+        "url": "https://www.ertyu.org/steven_nikkel/cancellsites.html"
+      },
+      {
+        "title": "Canadian Amateur Radio Operator Search",
+        "url": "https://apc-cap.ic.gc.ca/pls/apc_anon/query_amat_cs$.startup"
+      },
+      {
+        "title": "Archives Canada Genealogy and Family History",
+        "url": "https://www.bac-lac.gc.ca/eng/discover/genealogy/Pages/introduction.aspx"
+      },
+      {
+        "title": "University Study Programs Search",
+        "url": "https://www.universitystudy.ca/"
+      },
+      {
+        "title": "Necrologs search",
+        "url": "https://necrocanada.com/"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://companiesoffice.gov.mb.ca/online.html"
+      },
+      {
+        "title": "Courts search",
+        "url": "https://web43.gov.mb.ca/Registry/NameSearch"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://www.pxw2.snb.ca/card_online/cardsearch.aspx"
+      },
+      {
+        "title": "Courts search",
+        "url": "https://www1.gnb.ca/nota/Default.aspx?lang=en-US"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://cado.eservices.gov.nl.ca/CADOInternet/Main.aspx"
+      },
+      {
+        "title": "Assessment Search",
+        "url": "https://maa.ca/assessments/assessment-search/"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://www.justice.gov.nt.ca/app/cros-rsel/search"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://beta.novascotia.ca/programs-and-services/registry-joint-stock-companies"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://nni.gov.nu.ca/business/search/name"
+      },
+      {
+        "title": "Transport live map",
+        "url": "https://www.grt.ca/en/schedules-maps/desktop-realtime-map.aspx"
+      },
+      {
+        "title": "Municipal property assesments",
+        "url": "https://www.mpac.ca/en"
+      },
+      {
+        "title": "Dataset of public toilets",
+        "url": "https://www.ottawapublictoilets.ca/public-washroom-maps/%20"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://www.princeedwardisland.ca/en/feature/pei-business-corporate-registry-original#/service/LegacyBusiness/LegacyBusinessSearch"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://www.quebec.ca/en/businesses-and-self-employed-workers/public-registries"
+      },
+      {
+        "title": "Provincal Land Registry",
+        "url": "https://appli.mern.gouv.qc.ca/infolot/"
+      },
+      {
+        "title": "Civil Records Registry",
+        "url": "https://numerique.banq.qc.ca/resultats"
+      },
+      {
+        "title": "Court search",
+        "url": "https://soquij.qc.ca/frs"
+      },
+      {
+        "title": "Driver s License Ceck",
+        "url": "https://saaq.gouv.qc.ca/services-en-ligne/citoyens/verifier-validite-permis-conduire/"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://www.isc.ca/CorporateRegistry/Pages/default.aspx"
+      },
+      {
+        "title": "Municipal Property Assesments",
+        "url": "https://www.sama.sk.ca/"
+      },
+      {
+        "title": "Public Toilets Map",
+        "url": "https://torontotoilets.org"
+      },
+      {
+        "title": "Dataset of street trees",
+        "url": "https://open.toronto.ca/dataset/street-tree-data/"
+      },
+      {
+        "title": "Dataset of street trees",
+        "url": "https://opendata.vancouver.ca/explore/dataset/street-trees/information/?disjunctive.species_name&disjunctive.common_name&disjunctive.height_range_id"
+      },
+      {
+        "title": "Dataset of public toilets",
+        "url": "https://opendata.vancouver.ca/explore/dataset/public-washrooms/map/"
+      },
+      {
+        "title": "Business Registry Search",
+        "url": "https://ycor-reey.gov.yk.ca/search"
+      }
+    ]
+  },
+  "KY": {
+    "name": "Cayman Islands",
+    "lat": 19.51,
+    "lng": -80.57,
+    "links": [
+      {
+        "title": "cima.ky",
+        "url": "https://www.cima.ky/search-entities-cima"
+      },
+      {
+        "title": "Business list",
+        "url": "https://www.caymanlist.com/"
+      }
+    ]
+  },
+  "TD": {
+    "name": "Chad",
+    "lat": 15.45,
+    "lng": 18.73,
+    "links": [
+      {
+        "title": "Business search",
+        "url": "http://chad.afrium.com/"
+      }
+    ]
+  },
+  "CL": {
+    "name": "Chile",
+    "lat": -35.68,
+    "lng": -71.54,
+    "links": [
+      {
+        "title": "Chile Yellow Pages",
+        "url": "http://www.galaxy.com/rvw18197-841205/Chile-Electronic-Yellow-Pages.htm"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelu.cl/"
+      },
+      {
+        "title": "conservador.cl",
+        "url": "https://www.conservador.cl/portal/indice_comercio"
+      }
+    ]
+  },
+  "CN": {
+    "name": "China",
+    "lat": 35.86,
+    "lng": 104.2,
+    "links": [
+      {
+        "title": "Startme China Osint tools page",
+        "url": "https://start.me/p/7kLY9R/osint-chine"
+      },
+      {
+        "title": "xinyong.1688.com",
+        "url": "https://xinyong.1688.com/"
+      },
+      {
+        "title": "China Judicial Process Information Online",
+        "url": "https://splcgk.court.gov.cn/lcgkw/user"
+      },
+      {
+        "title": "China Jugments Online",
+        "url": "https://wenshu.court.gov.cn/"
+      },
+      {
+        "title": "China Vista Yellow Pages",
+        "url": "http://www.chinavista.com/business/directory/home.html"
+      },
+      {
+        "title": "China Yellow Pages",
+        "url": "http://www.yellowpages-china.com/"
+      },
+      {
+        "title": "WhatChina People Search",
+        "url": "http://www.whatchina.com"
+      },
+      {
+        "title": "Wenshu Court Search",
+        "url": "https://wenshu.court.gov.cn"
+      },
+      {
+        "title": "Xinjiang Victims Database",
+        "url": "https://shahit.biz/eng/"
+      }
+    ]
+  },
+  "CO": {
+    "name": "Colombia",
+    "lat": 4.57,
+    "lng": -74.3,
+    "links": [
+      {
+        "title": "Colombian Yellow Pages",
+        "url": "http://www.quehubo.com/"
+      },
+      {
+        "title": "Colombian Business Information/Yellow Pages",
+        "url": "http://www.paginasamarillas.com.co/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelu.com.co/"
+      },
+      {
+        "title": "Creden DBD. Search companies by person name",
+        "url": "https://creden.co/creditscore/business/main.html"
+      }
+    ]
+  },
+  "KM": {
+    "name": "Comoros",
+    "lat": -11.88,
+    "lng": 43.87,
+    "links": [
+      {
+        "title": "Comoros licencse business registry",
+        "url": "https://www.comorosservices.com/comoros-register"
+      }
+    ]
+  },
+  "CK": {
+    "name": "Cook Islands",
+    "lat": -21.24,
+    "lng": -159.78,
+    "links": [
+      {
+        "title": "registry.justice.gov.ck",
+        "url": "https://registry.justice.gov.ck/corp/search.aspx"
+      }
+    ]
+  },
+  "CR": {
+    "name": "Costa Rica",
+    "lat": 9.75,
+    "lng": -83.75,
+    "links": [
+      {
+        "title": "Costa Rica Yellow Pages",
+        "url": "http://costa-rica.paginasamarillas.com/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://yelu.cr/"
+      }
+    ]
+  },
+  "HR": {
+    "name": "Croatia",
+    "lat": 45.1,
+    "lng": 15.2,
+    "links": [
+      {
+        "title": "companywall.hr",
+        "url": "https://www.companywall.hr/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://croatiayp.com/"
+      },
+      {
+        "title": "Zagreb City Cemetry",
+        "url": "https://www.gradskagroblja.hr/trazilica-pokojnika/15"
+      }
+    ]
+  },
+  "CU": {
+    "name": "Cuba",
+    "lat": 21.52,
+    "lng": -77.78,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yellocu.com/"
+      },
+      {
+        "title": "People search Telegram bot",
+        "url": "https://t.me/ETECSABD_bot"
+      },
+      {
+        "title": "CubaGenWeb",
+        "url": "https://www.cubagenweb.org/"
+      }
+    ]
+  },
+  "CW": {
+    "name": "Curacao",
+    "lat": 12.17,
+    "lng": -68.98,
+    "links": [
+      {
+        "title": "curacao-chamber.cw",
+        "url": "http://www.curacao-chamber.cw/services/registry/search-company"
+      }
+    ]
+  },
+  "CY": {
+    "name": "Cyprus",
+    "lat": 35.13,
+    "lng": 33.43,
+    "links": [
+      {
+        "title": "eservices.dls.moi.gov.cy",
+        "url": "http://eservices.dls.moi.gov.cy/#/national/geoportalmapviewer"
+      },
+      {
+        "title": "efiling.drcor.mcit.gov.cy",
+        "url": "https://efiling.drcor.mcit.gov.cy/DrcorPublic/SearchForm.aspx"
+      },
+      {
+        "title": "Legal documents search",
+        "url": "https://cylaw.org"
+      },
+      {
+        "title": "White pages",
+        "url": "http://www.diadiktion.com/diadiktiondirectory-whitepagescyprus.htm"
+      },
+      {
+        "title": "Business search",
+        "url": "http://cypindex.com/"
+      }
+    ]
+  },
+  "CZ": {
+    "name": "Czech Republic",
+    "lat": 49.82,
+    "lng": 15.47,
+    "links": [
+      {
+        "title": "or.justice.cz",
+        "url": "https://or.justice.cz/ias/ui/rejstrik-$firma?"
+      },
+      {
+        "title": "spz.penize.cz",
+        "url": "https://spz.penize.cz/"
+      },
+      {
+        "title": "Czech Catalog & Phonebook",
+        "url": "http://www.zlatestranky.cz/"
+      },
+      {
+        "title": "National Thesis (research) Registry",
+        "url": "https://theses.cz/th_search/catalogue?lang=en"
+      }
+    ]
+  },
+  "CD": {
+    "name": "DR Congo",
+    "lat": -4.04,
+    "lng": 21.76,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "http://congoyp.com/"
+      }
+    ]
+  },
+  "DK": {
+    "name": "Denmark",
+    "lat": 56.26,
+    "lng": 9.5,
+    "links": [
+      {
+        "title": "Copenhagen Police Emigrant protocols (Denmark, up to 1908)",
+        "url": "http://www.udvandrerarkivet.dk/udvandrerprotokollerne/"
+      },
+      {
+        "title": "kort.matrikel.dk",
+        "url": "https://kort.matrikel.dk/spatialmap"
+      },
+      {
+        "title": "datacvr.virk.dk",
+        "url": "https://datacvr.virk.dk/data/"
+      },
+      {
+        "title": "nummerplade.net",
+        "url": "https://www.nummerplade.net/nummerplade/"
+      },
+      {
+        "title": "Civil records search",
+        "url": "https://statstidende.dk/messages"
+      },
+      {
+        "title": "Denmark Domstole",
+        "url": "https://www.domstol.dk/"
+      },
+      {
+        "title": "Danish Business Directory",
+        "url": "http://www.denmark.net/business"
+      },
+      {
+        "title": "Danish Local Search",
+        "url": "http://www.909.dk/"
+      },
+      {
+        "title": "Danish Yellow Pages",
+        "url": "http://www.yellowpages.dk/"
+      },
+      {
+        "title": "License place search",
+        "url": "https://www.tjekbil.dk/"
+      }
+    ]
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "lat": 11.83,
+    "lng": 42.59,
+    "links": [
+      {
+        "title": "Business search",
+        "url": "http://djibouti.afrium.com/"
+      }
+    ]
+  },
+  "EC": {
+    "name": "Ecuador",
+    "lat": -1.83,
+    "lng": -78.18,
+    "links": [
+      {
+        "title": "Ecuador Yellow Pages",
+        "url": "http://www.paginasamarillas.info.ec/"
+      }
+    ]
+  },
+  "EG": {
+    "name": "Egypt",
+    "lat": 26.82,
+    "lng": 30.8,
+    "links": [
+      {
+        "title": "Egypt Yellow Pages",
+        "url": "http://www.yellowpages.com.eg/en"
+      }
+    ]
+  },
+  "SV": {
+    "name": "El Salvador",
+    "lat": 13.79,
+    "lng": -88.9,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.elsalvadoryp.com/"
+      }
+    ]
+  },
+  "EE": {
+    "name": "Estonia",
+    "lat": 58.6,
+    "lng": 25.01,
+    "links": [
+      {
+        "title": "xgis.maaamet.ee",
+        "url": "https://xgis.maaamet.ee/xgis2/page/app/maainfo"
+      },
+      {
+        "title": "eteenindus.mnt.ee",
+        "url": "https://eteenindus.mnt.ee/public/soidukTaustakontroll.jsf"
+      },
+      {
+        "title": "Ministry of Justice of Estonia",
+        "url": "https://www.riigiteataja.ee/kohtulahendid/koik_menetlused.html"
+      },
+      {
+        "title": "Estonia Yellow Pages",
+        "url": "http://www.yellowpages.ee/en/"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "http://estoniayp.com/"
+      },
+      {
+        "title": "ariregister.rik.ee",
+        "url": "https://ariregister.rik.ee/"
+      },
+      {
+        "title": "gis.ee",
+        "url": "https://gis.ee/tallinn/"
+      }
+    ]
+  },
+  "ET": {
+    "name": "Ethiopia",
+    "lat": 9.15,
+    "lng": 40.49,
+    "links": [
+      {
+        "title": "ethiopian.portal.miningcadastre.com",
+        "url": "http://ethiopian.portal.miningcadastre.com/MapPage.aspx?PageID=a16a9300-7c58-4f81-9e5c-97e13b22b0c6"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://ethyp.com/"
+      }
+    ]
+  },
+  "EU": {
+    "name": "European Union",
+    "lat": 50.85,
+    "lng": 4.35,
+    "links": [
+      {
+        "title": "Search and analyse tender data from 33 jurisdictions (28 EU member states, Norway, the EU Institutions, Iceland, Switzerland, Georgia)",
+        "url": "https://opentender.eu/start"
+      },
+      {
+        "title": "EUR-Lex. European Union legal case search",
+        "url": "https://eur-lex.europa.eu/collection/eu-law/eu-case-law.html"
+      },
+      {
+        "title": "Curia. Case Law search",
+        "url": "https://curia.europa.eu/juris/recherche.jsf?language=en"
+      },
+      {
+        "title": "Business registers – search for a company in the EU",
+        "url": "https://e-justice.europa.eu/content_find_a_company-489-en.do"
+      },
+      {
+        "title": "Eurostat database",
+        "url": "https://ec.europa.eu/eurostat/data/database"
+      },
+      {
+        "title": "EC Clinical Trials Register",
+        "url": "https://www.clinicaltrialsregister.eu/"
+      },
+      {
+        "title": "Enepp database",
+        "url": "https://www.encepp.eu/encepp/search.htm"
+      }
+    ]
+  },
+  "FO": {
+    "name": "Faroe Islands",
+    "lat": 61.89,
+    "lng": -6.91,
+    "links": [
+      {
+        "title": "skraseting.fo",
+        "url": "https://www.skraseting.fo/en/companies/search-companies/"
+      }
+    ]
+  },
+  "FJ": {
+    "name": "Fiji",
+    "lat": -17.71,
+    "lng": 178.07,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "http://fijiyp.com/"
+      }
+    ]
+  },
+  "FI": {
+    "name": "Finland",
+    "lat": 61.92,
+    "lng": 25.75,
+    "links": [
+      {
+        "title": "asiointi.maanmittauslaitos.fi",
+        "url": "https://asiointi.maanmittauslaitos.fi/karttapaikka/"
+      },
+      {
+        "title": "asiakastieto.fi",
+        "url": "https://www.asiakastieto.fi/yritykset/"
+      },
+      {
+        "title": "biltema.fi",
+        "url": "https://www.biltema.fi/auton-varaosahaku/"
+      },
+      {
+        "title": "Finlex",
+        "url": "https://www.finlex.fi/fi/oikeus/"
+      },
+      {
+        "title": "Finland Yellow Pages",
+        "url": "http://www.fonecta.fi/"
+      },
+      {
+        "title": "Finland Yellow Pages & Phonebook",
+        "url": "http://www.keltaisetsivut.fi/"
+      },
+      {
+        "title": "Finland White Pages",
+        "url": "http://www.numeronetti.fi/"
+      },
+      {
+        "title": "Finland Yellow Pages",
+        "url": "http://www.yritystele.fi/"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "http://yellofi.com/"
+      },
+      {
+        "title": "live.foli.fi",
+        "url": "https://live.foli.fi/lemap"
+      }
+    ]
+  },
+  "FR": {
+    "name": "France",
+    "lat": 46.23,
+    "lng": 2.21,
+    "links": [
+      {
+        "title": "cadastre.gouv.fr",
+        "url": "https://www.cadastre.gouv.fr/scpc/accueil.do"
+      },
+      {
+        "title": "verif.com",
+        "url": "https://www.verif.com/"
+      },
+      {
+        "title": "siv-auto.fr",
+        "url": "https://siv-auto.fr/"
+      },
+      {
+        "title": "French Yellow Pages",
+        "url": "http://www.pagesjaunes.fr/?lang=en"
+      },
+      {
+        "title": "sncf.com",
+        "url": "https://www.sncf.com/fr/itineraire-reservation/geolocalisation"
+      },
+      {
+        "title": "Search by 25 millions death notices since 1970",
+        "url": "https://deces.matchid.io/search"
+      },
+      {
+        "title": "Papers.fr - Companies info",
+        "url": "https://www.pappers.fr/"
+      }
+    ]
+  },
+  "GA": {
+    "name": "Gabon",
+    "lat": -0.8,
+    "lng": 11.61,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelu.ga/"
+      }
+    ]
+  },
+  "GE": {
+    "name": "Georgia",
+    "lat": 42.32,
+    "lng": 43.36,
+    "links": [
+      {
+        "title": "Business registrya>",
+        "url": "https://enreg.reestri.gov.ge/main.php?m=new_index"
+      }
+    ]
+  },
+  "DE": {
+    "name": "Germany",
+    "lat": 51.17,
+    "lng": 10.45,
+    "links": [
+      {
+        "title": "vbb.de",
+        "url": "https://www.vbb.de/fahrinfo/"
+      },
+      {
+        "title": "Bremen Passengers List 1920 - 1939",
+        "url": "http://www.passengerlists.de/"
+      },
+      {
+        "title": "unternehmensregister.de",
+        "url": "https://www.unternehmensregister.de/ureg/"
+      },
+      {
+        "title": "German Business Directory",
+        "url": "http://www.klicktel.de/branchenbuch"
+      },
+      {
+        "title": "Gelbe Seiten Yellow Pages",
+        "url": "http://www.gelbeseiten.de/"
+      },
+      {
+        "title": "German Yellow Pages",
+        "url": "http://www.teleauskunft.de/"
+      },
+      {
+        "title": "Business registry",
+        "url": "https://implisense.com/"
+      },
+      {
+        "title": "Germany Airfields Database",
+        "url": "https://ulforum.de/flugplatzliste"
+      },
+      {
+        "title": "Phone book/yellow pages",
+        "url": "https://www.dasoertliche.de/"
+      },
+      {
+        "title": "FragDenStat",
+        "url": "https://fragdenstaat.de/"
+      },
+      {
+        "title": "Complete catalog of German-language funeral sermons",
+        "url": "http://www.personalschriften.de/datenbanken/gesa/gesa-erweiterte-suche.html"
+      }
+    ]
+  },
+  "GH": {
+    "name": "Ghana",
+    "lat": 7.95,
+    "lng": -1.02,
+    "links": [
+      {
+        "title": "Yellow Pages Ghana",
+        "url": "http://yellowpages.com.gh/Home.aspx"
+      },
+      {
+        "title": "Business search",
+        "url": "https://egovonline.gegov.gov.gh/RGDPortalWeb/portal/RGDHome/eghana.portal;jsessionid=N5rnhGDTgPNfSfLSXCqz8RlLSfgbzLyFpKS36FLMwgplBl6Fp5L5!-660752565?_nfpb=true&_st=&_pageLabel=portal_RGDHome_NameSearchPage_page&linksPageTitle=Name+Search&service=namesearch#wlp_portal_RGDHome_NameSearchPage_page"
+      },
+      {
+        "title": "TIN Verify",
+        "url": "https://gra.gov.gh/online-tools/verify-tin/"
+      },
+      {
+        "title": "Private Security organizations dataset",
+        "url": "https://www.mint.gov.gh/private-security-organisations-in-good-standing/"
+      }
+    ]
+  },
+  "GR": {
+    "name": "Greece",
+    "lat": 39.07,
+    "lng": 21.82,
+    "links": [
+      {
+        "title": "Greece Yellow Pages",
+        "url": "http://www.xo.gr/"
+      },
+      {
+        "title": "Medical registry",
+        "url": "https://en.mitos.gov.gr/index.php/%CE%94%CE%94:Register_of_Occupational_Doctors"
+      }
+    ]
+  },
+  "GT": {
+    "name": "Guatemala",
+    "lat": 15.78,
+    "lng": -90.23,
+    "links": [
+      {
+        "title": "econsultas.registromercantil.gob.gt",
+        "url": "http://econsultas.registromercantil.gob.gt"
+      },
+      {
+        "title": "Guatemala Yellow Pages",
+        "url": "http://www.paginasamarillas.com.gt/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.gtyello.com/"
+      }
+    ]
+  },
+  "GG": {
+    "name": "Guernsey",
+    "lat": 49.47,
+    "lng": -2.59,
+    "links": [
+      {
+        "title": "greg.gg",
+        "url": "https://www.greg.gg/webCompSearch.aspx"
+      }
+    ]
+  },
+  "GN": {
+    "name": "Guinea",
+    "lat": 9.95,
+    "lng": -9.7,
+    "links": [
+      {
+        "title": "guinee.cadastreminier.org",
+        "url": "http://guinee.cadastreminier.org/fr/"
+      }
+    ]
+  },
+  "HN": {
+    "name": "Honduras",
+    "lat": 15.2,
+    "lng": -86.24,
+    "links": [
+      {
+        "title": "Honduras Yellow Pages",
+        "url": "http://honduras.paginasamarillas.com/"
+      }
+    ]
+  },
+  "HU": {
+    "name": "Hungary",
+    "lat": 47.16,
+    "lng": 19.5,
+    "links": [
+      {
+        "title": "Start me Hungary osint tools list",
+        "url": "https://start.me/p/kxGLzd/hun-osint"
+      },
+      {
+        "title": "adoszam.hu",
+        "url": "https://www.adoszam.hu/"
+      },
+      {
+        "title": "National Court Office",
+        "url": "https://eakta.birosag.hu/anonimizalt-hatarozatok"
+      },
+      {
+        "title": "White Pages",
+        "url": "https://www.telekom.hu/lakossagi/tudakozo"
+      }
+    ]
+  },
+  "IS": {
+    "name": "Iceland",
+    "lat": 64.96,
+    "lng": -19.02,
+    "links": [
+      {
+        "title": "White/Yellow pages",
+        "url": "https://ja.is/"
+      }
+    ]
+  },
+  "IN": {
+    "name": "India",
+    "lat": 20.59,
+    "lng": 78.96,
+    "links": [
+      {
+        "title": "mca.gov.in",
+        "url": "https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do"
+      },
+      {
+        "title": "Search by individual tax number (GSTIN)",
+        "url": "https://www.thetaxladder.com/search-gstin/"
+      },
+      {
+        "title": "White Pages",
+        "url": "https://www.indianfinders.com"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://yelu.in/"
+      },
+      {
+        "title": "Contacts of India people search",
+        "url": "http://www.contactofindia.com/"
+      },
+      {
+        "title": "Indian Medical Register",
+        "url": "https://www.nmc.org.in/information-desk/indian-medical-register/"
+      }
+    ]
+  },
+  "ID": {
+    "name": "Indonesia",
+    "lat": -0.79,
+    "lng": 113.92,
+    "links": [
+      {
+        "title": "ahu.go.id",
+        "url": "https://ahu.go.id/pencarian/profil-pt"
+      },
+      {
+        "title": "Registrar of the Supreme Court of the Republic of Indonesia",
+        "url": "https://kepaniteraan.mahkamahagung.go.id/perkara/"
+      },
+      {
+        "title": "Indonesia Yellow Pages",
+        "url": "http://www.yellowpages.co.id/"
+      }
+    ]
+  },
+  "IR": {
+    "name": "Iran",
+    "lat": 32.43,
+    "lng": 53.69,
+    "links": [
+      {
+        "title": "Iran Yellow Pages",
+        "url": "http://www.iranyellowpages.net/en/"
+      }
+    ]
+  },
+  "IE": {
+    "name": "Ireland",
+    "lat": 53.14,
+    "lng": -7.69,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.irelandyp.com/"
+      },
+      {
+        "title": "National register of BER Accessors",
+        "url": "https://ndber.seai.ie/PASS/Assessors/Search.aspx"
+      },
+      {
+        "title": "Kompass Business Directory",
+        "url": "http://ie.kompass.com/"
+      }
+    ]
+  },
+  "IM": {
+    "name": "Isle of Man",
+    "lat": 54.24,
+    "lng": -4.55,
+    "links": [
+      {
+        "title": "services.gov.im",
+        "url": "https://services.gov.im/ded/services/companiesregistry/companysearch.iom"
+      }
+    ]
+  },
+  "IL": {
+    "name": "Israel",
+    "lat": 31.05,
+    "lng": 34.85,
+    "links": [
+      {
+        "title": "ica.justice.gov.il",
+        "url": "https://ica.justice.gov.il/AnonymousRequest/Search"
+      },
+      {
+        "title": "Supreme court of Israel",
+        "url": "https://supreme.court.gov.il/Pages/fullsearch.aspx"
+      },
+      {
+        "title": "Israel Yellow Pages",
+        "url": "http://www.yellow.com/376.html"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "http://israeliyp.com/"
+      },
+      {
+        "title": "Israel sanctions lists",
+        "url": "https://nbctf.mod.gov.il/en/designations/Pages/downloads.aspx"
+      },
+      {
+        "title": "Israel counterterrorism seizures",
+        "url": "https://nbctf.mod.gov.il/en/seizures/Pages/seizureOrders.aspx"
+      },
+      {
+        "title": "Israel crypto seizures",
+        "url": "https://nbctf.mod.gov.il/en/seizures/Pages/Blockchain1.aspx"
+      },
+      {
+        "title": "Israel nonprofits database (Hebrew)",
+        "url": "https://www.guidestar.org.il/home"
+      }
+    ]
+  },
+  "IT": {
+    "name": "Italy",
+    "lat": 41.87,
+    "lng": 12.57,
+    "links": [
+      {
+        "title": "empresite.it",
+        "url": "https://www.empresite.it/"
+      },
+      {
+        "title": "sevim.it",
+        "url": "https://www.sevim.it/gratis/targa.asp"
+      },
+      {
+        "title": "Italy Yellow Pages",
+        "url": "http://www.pronto.it/"
+      },
+      {
+        "title": "White Pages",
+        "url": "https://www.paginebianche.it/"
+      }
+    ]
+  },
+  "CI": {
+    "name": "Ivory Coast",
+    "lat": 7.54,
+    "lng": -5.55,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "https://portals.landfolio.com/CoteDIvoire/FR/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelloci.com/"
+      }
+    ]
+  },
+  "JM": {
+    "name": "Jamaica",
+    "lat": 18.11,
+    "lng": -77.3,
+    "links": [
+      {
+        "title": "Jamaica Yellow Pages",
+        "url": "https://jmyello.com/"
+      },
+      {
+        "title": "Jamaica Historical Foundation (search by first/last name)",
+        "url": "http://jamaicahf.info/index.php/people-in-jamaica"
+      },
+      {
+        "title": "Jamaica Family Search (genealogy info)",
+        "url": "http://www.jamaicanfamilysearch.com/"
+      },
+      {
+        "title": "Jamaica Historical Foundation Maps Collection",
+        "url": "http://jamaicahf.info/index.php/maps"
+      },
+      {
+        "title": "FindYellow Jamaica",
+        "url": "https://www.findyello.com/jamaica/"
+      }
+    ]
+  },
+  "JP": {
+    "name": "Japan",
+    "lat": 36.2,
+    "lng": 138.25,
+    "links": [
+      {
+        "title": "touki.or.jp",
+        "url": "https://www1.touki.or.jp/gateway.html"
+      },
+      {
+        "title": "Courts in Japan",
+        "url": "https://www.courts.go.jp/app/hanrei_jp/search1"
+      },
+      {
+        "title": "Japan Yellow Pages",
+        "url": "http://itp.ne.jp/"
+      },
+      {
+        "title": "OSINT Japan Github repo",
+        "url": "https://github.com/Coordinate-Cat/OSINT-JAPAN"
+      }
+    ]
+  },
+  "JE": {
+    "name": "Jersey",
+    "lat": 49.21,
+    "lng": -2.13,
+    "links": [
+      {
+        "title": "jerseyfsc.org",
+        "url": "https://www.jerseyfsc.org/registry/registry-entities/"
+      },
+      {
+        "title": "Jersey Law",
+        "url": "https://www.jerseylaw.je/judgments/Pages/Search.aspx"
+      }
+    ]
+  },
+  "JO": {
+    "name": "Jordan",
+    "lat": 30.59,
+    "lng": 36.24,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.jordanyp.com/"
+      }
+    ]
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "lat": 48.02,
+    "lng": 66.92,
+    "links": [
+      {
+        "title": "aisgzk.kz",
+        "url": "http://www.aisgzk.kz/aisgzk/ru/content/maps/"
+      },
+      {
+        "title": "pk.uchet.kz",
+        "url": "https://pk.uchet.kz/"
+      },
+      {
+        "title": "Supreme Court of Kazakhstan",
+        "url": "https://office.sud.kz/lawsuit/"
+      },
+      {
+        "title": "Yellow Page",
+        "url": "http://kazakhstanyp.com/"
+      }
+    ]
+  },
+  "KE": {
+    "name": "Kenya",
+    "lat": -0.02,
+    "lng": 37.91,
+    "links": [
+      {
+        "title": "portal.miningcadastre.go.ke",
+        "url": "https://portal.miningcadastre.go.ke/Site/EmbeddedMapPortal.aspx?PageID=f877b9bc-d68a-415f-b051-5048ff5a68b0"
+      },
+      {
+        "title": "Kenya Yellow Pages",
+        "url": "http://www.yellowpageskenya.com/"
+      },
+      {
+        "title": "Legal cases search",
+        "url": "http://kenyalaw.org/"
+      },
+      {
+        "title": "Kenya Business List",
+        "url": "https://businesslist.co.ke/"
+      }
+    ]
+  },
+  "XK": {
+    "name": "Kosovo",
+    "lat": 42.6,
+    "lng": 20.9,
+    "links": [
+      {
+        "title": "geoportal.rks-gov.net",
+        "url": "http://geoportal.rks-gov.net"
+      }
+    ]
+  },
+  "KW": {
+    "name": "Kuwait",
+    "lat": 29.31,
+    "lng": 47.48,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.kuwaityello.com/"
+      }
+    ]
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "lat": 41.2,
+    "lng": 74.77,
+    "links": [
+      {
+        "title": "salyk.kg",
+        "url": "https://salyk.kg/TaxPayer/Info"
+      },
+      {
+        "title": "Court records",
+        "url": "http://act.sot.kg/kg/search"
+      },
+      {
+        "title": "Entity search",
+        "url": "https://cybdetective.com/osintmap/www.osoo.kg"
+      }
+    ]
+  },
+  "LA": {
+    "name": "Laos",
+    "lat": 19.86,
+    "lng": 102.5,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://laosyp.com/"
+      },
+      {
+        "title": "National enterprise database",
+        "url": "http://www.ned.moic.gov.la/index.php/en/explore-data-en/search"
+      }
+    ]
+  },
+  "LV": {
+    "name": "Latvia",
+    "lat": 56.88,
+    "lng": 24.6,
+    "links": [
+      {
+        "title": "kadastrs.lv",
+        "url": "https://www.kadastrs.lv/graphical_data/show"
+      },
+      {
+        "title": "firmas.lv",
+        "url": "http://www.firmas.lv/"
+      },
+      {
+        "title": "Court Administration of Latvia",
+        "url": "https://tiesas.lv/e-pakalpojumi/tiesvedibas-gaita"
+      },
+      {
+        "title": "saraksti.rigassatiksme.lv",
+        "url": "https://saraksti.rigassatiksme.lv/index.html#riga/map,page"
+      }
+    ]
+  },
+  "LB": {
+    "name": "Lebanon",
+    "lat": 33.85,
+    "lng": 35.86,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelleb.com/"
+      }
+    ]
+  },
+  "LS": {
+    "name": "Lesotho",
+    "lat": -29.61,
+    "lng": 28.23,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.lesothoyp.com/"
+      }
+    ]
+  },
+  "LR": {
+    "name": "Liberia",
+    "lat": 6.43,
+    "lng": -9.43,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "http://portals.landfolio.com/liberia/"
+      }
+    ]
+  },
+  "LY": {
+    "name": "Libya",
+    "lat": 26.34,
+    "lng": 17.23,
+    "links": [
+      {
+        "title": "Libya Yellow Pages",
+        "url": "http://www.yellowpages.ly/en/"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "https://libyayp.com/"
+      }
+    ]
+  },
+  "LT": {
+    "name": "Lithuania",
+    "lat": 55.17,
+    "lng": 23.88,
+    "links": [
+      {
+        "title": "Lithuania Yellow Pages",
+        "url": "http://www.visalietuva.lt/"
+      },
+      {
+        "title": "Lithuania Business Directory",
+        "url": "http://imones.lrytas.lt/"
+      },
+      {
+        "title": "Business registry",
+        "url": "https://www.registrucentras.lt/jar/p/index.php"
+      },
+      {
+        "title": "Geoportal/Cadastral map",
+        "url": "https://www.geoportal.lt/map/index.jsp?lang=en"
+      },
+      {
+        "title": "stops.lt",
+        "url": "https://www.stops.lt/vilnius/#vilnius/map"
+      }
+    ]
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "lat": 49.82,
+    "lng": 6.13,
+    "links": [
+      {
+        "title": "Luxembourg White Pages",
+        "url": "http://www.infobel.com/en/luxembourg/"
+      }
+    ]
+  },
+  "MG": {
+    "name": "Madagascar",
+    "lat": -18.77,
+    "lng": 46.87,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://madayp.com/"
+      }
+    ]
+  },
+  "MW": {
+    "name": "Malawi",
+    "lat": -13.25,
+    "lng": 34.3,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "http://portals.landfolio.com/malawi/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.malawiyp.com/"
+      }
+    ]
+  },
+  "MY": {
+    "name": "Malaysia",
+    "lat": 4.21,
+    "lng": 101.98,
+    "links": [
+      {
+        "title": "Malaysia Yellow Pages",
+        "url": "http://www.yellowpages.my/"
+      },
+      {
+        "title": "Find trucks",
+        "url": "https://mytruck.my"
+      },
+      {
+        "title": "Malaysia Business List",
+        "url": "https://businesslist.my/"
+      },
+      {
+        "title": "OSINT in Maylasia start.me page",
+        "url": "https://start.me/p/KMqwBB/osint-in-malaysia-resources"
+      },
+      {
+        "title": "Medical registry",
+        "url": "https://meritsmmc.moh.gov.my/search"
+      }
+    ]
+  },
+  "ML": {
+    "name": "Mali",
+    "lat": 17.57,
+    "lng": -4.0,
+    "links": [
+      {
+        "title": "Mali Yellow Pages",
+        "url": "http://www.malipages.com/en/"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "https://www.maliyp.com/"
+      }
+    ]
+  },
+  "MT": {
+    "name": "Malta",
+    "lat": 35.94,
+    "lng": 14.38,
+    "links": [
+      {
+        "title": "Search Civil Cases",
+        "url": "https://ecourts.gov.mt/onlineservices/CivilCases"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.maltayp.com/"
+      }
+    ]
+  },
+  "MR": {
+    "name": "Mauritania",
+    "lat": 21.01,
+    "lng": -10.94,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "http://portals.landfolio.com/Mauritania/fr/"
+      }
+    ]
+  },
+  "MU": {
+    "name": "Mauritius",
+    "lat": -20.35,
+    "lng": 57.55,
+    "links": [
+      {
+        "title": "companies.govmu.org",
+        "url": "https://companies.govmu.org:4343/MNSOnlineSearch/"
+      },
+      {
+        "title": "Supreme Court of Mauritius",
+        "url": "https://supremecourt.govmu.org/_Layouts/CLIS.DMS/Judgment/SearchPage.aspx"
+      }
+    ]
+  },
+  "MX": {
+    "name": "Mexico",
+    "lat": 23.63,
+    "lng": -102.55,
+    "links": [
+      {
+        "title": "Mexico Yellow Pages",
+        "url": "http://www.seccionamarilla.com.mx/"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "https://yelo.com.mx/"
+      }
+    ]
+  },
+  "MD": {
+    "name": "Moldova",
+    "lat": 47.41,
+    "lng": 28.37,
+    "links": [
+      {
+        "title": "Moldova Yellow Pages",
+        "url": "http://www.yellowpages.md/"
+      }
+    ]
+  },
+  "MN": {
+    "name": "Mongolia",
+    "lat": 46.86,
+    "lng": 103.85,
+    "links": [
+      {
+        "title": "Mongolia Supreme Court",
+        "url": "http://www.supremecourt.mn/english"
+      }
+    ]
+  },
+  "MA": {
+    "name": "Morocco",
+    "lat": 31.79,
+    "lng": -7.09,
+    "links": [
+      {
+        "title": "directinfo.ma",
+        "url": "https://www.directinfo.ma/"
+      },
+      {
+        "title": "Morocco Ministry of Justice (Administrative courts)",
+        "url": "https://www.mahakim.ma/Ar/Services/SuiviAffaires_new/TA/?Page=ServicesElectronique&TypJur=TA"
+      },
+      {
+        "title": "Morocco Ministry of Justice (Administrative courts of Appeal)",
+        "url": "https://www.mahakim.ma/Ar/Services/SuiviAffaires_new/CAA/?Page=ServicesElectronique&TypJur=CAA"
+      },
+      {
+        "title": "Morocco Ministry of Justice (Commercial courts)",
+        "url": "https://www.mahakim.ma/Ar/Services/SuiviAffaires_new/TC/?Page=ServicesElectronique&TypJur=TC"
+      },
+      {
+        "title": "Morocco Ministry of Justice (Commercial courts of Appeal)",
+        "url": "https://www.mahakim.ma/Ar/Services/SuiviAffaires_new/CAC/?Page=ServicesElectronique&TypJur=CAC"
+      },
+      {
+        "title": "Morocco Ministry of Justice (Courts of first instance)",
+        "url": "https://www.mahakim.ma/Ar/Services/SuiviAffaires_new/TPI/?Page=ServicesElectronique&TypJur=TPI"
+      },
+      {
+        "title": "Morocco Ministry of Justice (Courts of appeal)",
+        "url": "https://www.mahakim.ma/Ar/Services/SuiviAffaires_new/CA/?Page=ServicesElectronique&TypJur=CA"
+      },
+      {
+        "title": "Morocco White Pages",
+        "url": "http://www.telecontact.ma/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://yelo.ma/"
+      }
+    ]
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "lat": -18.67,
+    "lng": 35.53,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "https://portals.landfolio.com/mozambique/en/"
+      }
+    ]
+  },
+  "MM": {
+    "name": "Myanmar",
+    "lat": 21.91,
+    "lng": 95.96,
+    "links": [
+      {
+        "title": "Myanmar Yellow Pages",
+        "url": "http://www.myanmaryellowpages.biz/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.myanmaryp.com/"
+      }
+    ]
+  },
+  "NA": {
+    "name": "Namibia",
+    "lat": -22.96,
+    "lng": 18.49,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "https://portals.landfolio.com/namibia/"
+      },
+      {
+        "title": "Yellow Page",
+        "url": "https://www.namibiayp.com/"
+      }
+    ]
+  },
+  "NP": {
+    "name": "Nepal",
+    "lat": 28.39,
+    "lng": 84.12,
+    "links": [
+      {
+        "title": "Nepal",
+        "url": "https://nepalyp.com/"
+      }
+    ]
+  },
+  "NL": {
+    "name": "Netherlands",
+    "lat": 52.13,
+    "lng": 5.29,
+    "links": [
+      {
+        "title": "kadastralekaart.com",
+        "url": "https://kadastralekaart.com/kaart"
+      },
+      {
+        "title": "Rechtspraak",
+        "url": "https://uitspraken.rechtspraak.nl/"
+      },
+      {
+        "title": "Netherlands Telephone Directory",
+        "url": "http://www.detelefoongids.nl/"
+      },
+      {
+        "title": "ovzoeker.nl",
+        "url": "https://ovzoeker.nl/"
+      },
+      {
+        "title": "kentekencheck.nl",
+        "url": "https://www.kentekencheck.nl/kenteken"
+      },
+      {
+        "title": "White Pages",
+        "url": "https://www.telefoonboek.nl/personen/"
+      },
+      {
+        "title": "Genealogy databases",
+        "url": "https://www.wiewaswie.nl/nl/zoeken/"
+      },
+      {
+        "title": "Business registry",
+        "url": "https://www.kvk.nl/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.nlyello.com/"
+      },
+      {
+        "title": "Awesome Dutch OSINT Github repo",
+        "url": "https://github.com/wvanderp/awesome-dutch-osint"
+      }
+    ]
+  },
+  "NZ": {
+    "name": "New Zealand",
+    "lat": -40.9,
+    "lng": 174.89,
+    "links": [
+      {
+        "title": "app.companiesoffice.govt.nz",
+        "url": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/search"
+      },
+      {
+        "title": "New Zeland Yellow Pages",
+        "url": "http://yellow.co.nz/"
+      },
+      {
+        "title": "Yellow/White pages",
+        "url": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search"
+      },
+      {
+        "title": "Court Records",
+        "url": "https://www.courtsofnz.govt.nz/judgments/"
+      },
+      {
+        "title": "Decision Finder",
+        "url": "https://www.justice.govt.nz/courts/decisions/how-to-find/"
+      },
+      {
+        "title": "District court website",
+        "url": "https://www.districtcourts.govt.nz/"
+      },
+      {
+        "title": "New Zealand Legal Information (courts)",
+        "url": "http://www.nzlii.org/"
+      },
+      {
+        "title": "Car Jam (car history)",
+        "url": "https://www.carjam.co.nz/"
+      },
+      {
+        "title": "New Zeland companies office search",
+        "url": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search?roleType=ALL&advancedPanel=true&mode=advanced"
+      },
+      {
+        "title": "Intellectual Property Search",
+        "url": "https://www.iponz.govt.nz/"
+      },
+      {
+        "title": "New Zeland Law Society Database",
+        "url": "https://www.lawsociety.org.nz/for-the-community/search-register-of-lawyers"
+      },
+      {
+        "title": "Alcohol Regulatory & Licensing Authority",
+        "url": "https://www.justice.govt.nz/tribunals/arla/register-of-licences-and-certificates/"
+      },
+      {
+        "title": "New Zealand Register of Doctors",
+        "url": "https://www.mcnz.org.nz/registration/register-of-doctors/"
+      }
+    ]
+  },
+  "NI": {
+    "name": "Nicaragua",
+    "lat": 12.87,
+    "lng": -85.21,
+    "links": [
+      {
+        "title": "Nicaragua Yellow Pages",
+        "url": "http://www.paginasamarillas.com.ni/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelu.com.ni/"
+      }
+    ]
+  },
+  "NE": {
+    "name": "Niger",
+    "lat": 17.61,
+    "lng": 8.08,
+    "links": [
+      {
+        "title": "Business search",
+        "url": "https://www.niger.afrium.com/"
+      }
+    ]
+  },
+  "NG": {
+    "name": "Nigeria",
+    "lat": 9.08,
+    "lng": 8.68,
+    "links": [
+      {
+        "title": "Business search",
+        "url": "https://nigeria24.me"
+      },
+      {
+        "title": "Nigeria Business List",
+        "url": "https://businesslist.com.ng/"
+      },
+      {
+        "title": "Sex Offenders Database",
+        "url": "https://nsod.naptip.gov.ng/view_cases.php"
+      }
+    ]
+  },
+  "NU": {
+    "name": "Niue",
+    "lat": -19.05,
+    "lng": -169.86,
+    "links": [
+      {
+        "title": "companies.gov.nu",
+        "url": "http://www.companies.gov.nu/search-the-register/companies-register/"
+      }
+    ]
+  },
+  "KP": {
+    "name": "North Korea",
+    "lat": 40.34,
+    "lng": 127.51,
+    "links": [
+      {
+        "title": "AccessDPRK 2021 Map",
+        "url": "https://mynorthkorea.blogspot.com/2021/01/accessdprk-2021-map-free-version.html"
+      }
+    ]
+  },
+  "NO": {
+    "name": "Norway",
+    "lat": 60.47,
+    "lng": 8.47,
+    "links": [
+      {
+        "title": "geodataonline.maps.arcgis.com",
+        "url": "https://geodataonline.maps.arcgis.com/apps/Embed/index.html?webmap=384b4cac7e4b4c41980f90dc0f30fb12&extent=11.0427,59.955,11.0472,59.9566&zoom=true&scale=true&disable_scroll=false&theme=light"
+      },
+      {
+        "title": "vegvesen.no",
+        "url": "https://www.vegvesen.no/kjoretoy/kjop-og-salg/kjoretoyopplysninger/sjekk-kjoretoyopplysninger/"
+      },
+      {
+        "title": "Court Administration of Norwegia",
+        "url": "https://www.domstol.no/nar-gar-rettssaken/"
+      },
+      {
+        "title": "proff.no",
+        "url": "https://www.proff.no/"
+      },
+      {
+        "title": "Business registry",
+        "url": "https://www.brreg.no"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.gulesider.no"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "https://www.yelono.com/"
+      },
+      {
+        "title": "Norwegian Craiglist",
+        "url": "https://www.finn.no/"
+      },
+      {
+        "title": "National library Newspaper Archive",
+        "url": "https://www.nb.no/"
+      },
+      {
+        "title": "National Population Registry",
+        "url": "https://www.skatteetaten.no/en/person/national-registry/"
+      },
+      {
+        "title": "tromsreise.no",
+        "url": "https://tromsreise.no/"
+      }
+    ]
+  },
+  "OM": {
+    "name": "Oman",
+    "lat": 21.47,
+    "lng": 55.98,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.omanyp.com/"
+      }
+    ]
+  },
+  "PK": {
+    "name": "Pakistan",
+    "lat": 30.38,
+    "lng": 69.35,
+    "links": [
+      {
+        "title": "Pakistan Business List",
+        "url": "https://businesslist.pk/"
+      }
+    ]
+  },
+  "PA": {
+    "name": "Panama",
+    "lat": 8.54,
+    "lng": -80.78,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelupa.com/"
+      }
+    ]
+  },
+  "PG": {
+    "name": "Papua New Guinea",
+    "lat": -6.31,
+    "lng": 143.96,
+    "links": [
+      {
+        "title": "portal.mra.gov.pg",
+        "url": "http://portal.mra.gov.pg/map/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.pngyp.com/"
+      }
+    ]
+  },
+  "PY": {
+    "name": "Paraguay",
+    "lat": -23.44,
+    "lng": -58.44,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yeloparaguay.com/"
+      }
+    ]
+  },
+  "PE": {
+    "name": "Peru",
+    "lat": -9.19,
+    "lng": -75.02,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.peruyello.com/"
+      }
+    ]
+  },
+  "PH": {
+    "name": "Philippines",
+    "lat": 12.88,
+    "lng": 121.77,
+    "links": [
+      {
+        "title": "Philippines Business List",
+        "url": "https://businesslist.ph/"
+      }
+    ]
+  },
+  "PL": {
+    "name": "Poland",
+    "lat": 51.92,
+    "lng": 19.15,
+    "links": [
+      {
+        "title": "The Board of Communal Cemeteries in Krakow",
+        "url": "http://www.rakowice.eu/"
+      },
+      {
+        "title": "podatki.gov.pl",
+        "url": "https://www.podatki.gov.pl/wykaz-podatnikow-vat-wyszukiwarka/uisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0"
+      },
+      {
+        "title": "Saos",
+        "url": "https://www.saos.org.pl/search"
+      },
+      {
+        "title": "Debt search",
+        "url": "https://dlugi.info"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.polandyp.com/"
+      },
+      {
+        "title": "Poland version of OSINT Framework",
+        "url": "https://otwartezrodla.pl/"
+      },
+      {
+        "title": "Sex Offenders Database",
+        "url": "https://rps.ms.gov.pl/pl-PL/Public#/home"
+      },
+      {
+        "title": "OSINT Poland Github repo",
+        "url": "https://github.com/9wind/OSINT-Poland"
+      }
+    ]
+  },
+  "PT": {
+    "name": "Portugal",
+    "lat": 39.4,
+    "lng": -8.22,
+    "links": [
+      {
+        "title": "publicacoes.mj.pt",
+        "url": "http://publicacoes.mj.pt/Pesquisa.aspx"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.portugalyp.com/"
+      }
+    ]
+  },
+  "QA": {
+    "name": "Qatar",
+    "lat": 25.35,
+    "lng": 51.18,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.qataryello.com/"
+      }
+    ]
+  },
+  "RO": {
+    "name": "Romania",
+    "lat": 45.94,
+    "lng": 24.97,
+    "links": [
+      {
+        "title": "info.stbsa.ro",
+        "url": "https://info.stbsa.ro/"
+      },
+      {
+        "title": "Romania Yellow Pages",
+        "url": "http://yellowpages.com.ro/"
+      },
+      {
+        "title": "Romania Local Search",
+        "url": "http://www.rolocal.ro/"
+      },
+      {
+        "title": "Legal Documents Search",
+        "url": "http://portal.just.ro/SitePages/acasa.aspx"
+      },
+      {
+        "title": "Companies information search",
+        "url": "https://www.paginiaurii.ro"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "https://www.romaniayp.com/"
+      }
+    ]
+  },
+  "RU": {
+    "name": "Russia",
+    "lat": 61.52,
+    "lng": 105.32,
+    "links": [
+      {
+        "title": "Moscow region Slazav map (nakarte.me)",
+        "url": "https://nakarte.me/#m=12/55.86898/37.99726&l=O/Z"
+      },
+      {
+        "title": "pkk.rosreestr.ru",
+        "url": "https://pkk.rosreestr.ru/#/search"
+      },
+      {
+        "title": "rmsp.nalog.ru",
+        "url": "https://rmsp.nalog.ru/"
+      },
+      {
+        "title": "nomerogram.ru",
+        "url": "https://www.nomerogram.ru/"
+      },
+      {
+        "title": "State Automated System of the Russian Federation \"Justice\"",
+        "url": "https://sudrf.ru/index.php?id=300&searchtype=sp"
+      },
+      {
+        "title": "Judicial and regulatory acts of the Russian Federation",
+        "url": "https://sudact.ru/"
+      },
+      {
+        "title": "Russian Yellow Pages",
+        "url": "http://www.yp.ru/yellow.html/english/?n=2"
+      },
+      {
+        "title": "Jewish Grave Search",
+        "url": "https://toldot.ru/life/cemetery/"
+      },
+      {
+        "title": "Grave Search",
+        "url": "http://%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B7%D0%B0%D1%85%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9.%D1%80%D1%84/"
+      },
+      {
+        "title": "Russian Cemetries Database",
+        "url": "https://%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B0%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8.%D1%80%D1%84/"
+      },
+      {
+        "title": "Memorial Site",
+        "url": "http://%D1%81%D0%B0%D0%B9%D1%82-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8.%D1%80%D1%84/"
+      },
+      {
+        "title": "Domspravka White Pages",
+        "url": "https://ts.domspravka.com/"
+      },
+      {
+        "title": "SaveRuData (search in leaks by phone, surname or email)",
+        "url": "https://data.intelx.io/saverudata/"
+      },
+      {
+        "title": "OSINTUkraine: OSINT tools to archive, document and debunk the Russian War against Ukraine",
+        "url": "https://cybdetective.com/osintmap/osintukraine.com"
+      }
+    ]
+  },
+  "RW": {
+    "name": "Rwanda",
+    "lat": -1.94,
+    "lng": 29.87,
+    "links": [
+      {
+        "title": "Yellow pages",
+        "url": "https://www.rwandayp.com/"
+      }
+    ]
+  },
+  "LC": {
+    "name": "Saint Lucia",
+    "lat": 13.91,
+    "lng": -60.98,
+    "links": [
+      {
+        "title": "rocip.gov.lc",
+        "url": "http://www.rocip.gov.lc/stlucia/default.aspx"
+      }
+    ]
+  },
+  "SM": {
+    "name": "San Marino",
+    "lat": 43.94,
+    "lng": 12.46,
+    "links": [
+      {
+        "title": "registroimprese.cc.sm",
+        "url": "https://registroimprese.cc.sm/"
+      }
+    ]
+  },
+  "SA": {
+    "name": "Saudi Arabia",
+    "lat": 23.89,
+    "lng": 45.08,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.saudiayp.com/"
+      }
+    ]
+  },
+  "SN": {
+    "name": "Senegal",
+    "lat": 14.5,
+    "lng": -14.45,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelu.sn/"
+      }
+    ]
+  },
+  "RS": {
+    "name": "Serbia",
+    "lat": 44.02,
+    "lng": 21.01,
+    "links": [
+      {
+        "title": "Public transport map",
+        "url": "https://www.planplus.rs/beograd/gradski-prevoz"
+      },
+      {
+        "title": "Metro map",
+        "url": "https://www.gsp.rs/mapa_linija.aspx"
+      },
+      {
+        "title": "Public transport map",
+        "url": "https://www.planplus.rs/kragujevac/gradski-prevoz"
+      },
+      {
+        "title": "Public transport map",
+        "url": "https://www.planplus.rs/nis/gradski-prevoz"
+      },
+      {
+        "title": "Public transport map",
+        "url": "https://www.planplus.rs/uzice/gradski-prevoz"
+      },
+      {
+        "title": "Public transport map",
+        "url": "https://www.planplus.rs/novi-sad/gradski-prevoz"
+      },
+      {
+        "title": "Large directory of government (and other) portals",
+        "url": "https://www.rsportali.com/"
+      },
+      {
+        "title": "Postal codes list",
+        "url": "https://www.381info.com/postanski-brojevi"
+      },
+      {
+        "title": "Cadastral map",
+        "url": "https://a3.geosrbija.rs/katastar"
+      },
+      {
+        "title": "Interactive Memorial Map",
+        "url": "https://www.spomenikdatabase.org/map-directory"
+      }
+    ]
+  },
+  "SC": {
+    "name": "Seychelles",
+    "lat": -4.68,
+    "lng": 55.49,
+    "links": [
+      {
+        "title": "sqa.sc",
+        "url": "http://www.sqa.sc/BizRegistration/WebSearchBusiness.aspx"
+      }
+    ]
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "lat": 8.46,
+    "lng": -11.78,
+    "links": [
+      {
+        "title": "oarg.gov.sl",
+        "url": "http://www.oarg.gov.sl/cforms/portal.html"
+      }
+    ]
+  },
+  "SG": {
+    "name": "Singapore",
+    "lat": 1.35,
+    "lng": 103.82,
+    "links": [
+      {
+        "title": "bizfile.gov.sg",
+        "url": "https://www.bizfile.gov.sg/ngbbizfileinternet/faces/oracle/webcenter/portalapp/pages/BizfileHomepage.jspx"
+      },
+      {
+        "title": "Singapore White Pages",
+        "url": "http://www.phonebook.com.sg/"
+      },
+      {
+        "title": "Singapore Yellow Pages",
+        "url": "http://www.yellowpages.com.sg/"
+      }
+    ]
+  },
+  "SK": {
+    "name": "Slovakia",
+    "lat": 48.67,
+    "lng": 19.7,
+    "links": [
+      {
+        "title": "telefonny.zoznam.sk",
+        "url": "https://telefonny.zoznam.sk"
+      },
+      {
+        "title": "zoznamdlznikov.com",
+        "url": "https://zoznamdlznikov.com"
+      },
+      {
+        "title": "dlznik.zoznam.sk",
+        "url": "https://dlznik.zoznam.sk/sledovanie-firiem"
+      },
+      {
+        "title": "zoznam.sk",
+        "url": "https://zoznam.sk/katalog/Spravodajstvo-informacie/Firemne-katalogy-databanky/"
+      },
+      {
+        "title": "Slovakia Yellow Pages",
+        "url": "http://www.zlatestranky.sk/"
+      },
+      {
+        "title": "\"Pohrebiska\" cemetery",
+        "url": "https://www.pohrebiska.sk/vyhladanie.jsp?plocha=104"
+      },
+      {
+        "title": "Virtual cemetery",
+        "url": "http://www.virtualnycintorin.sk/"
+      },
+      {
+        "title": "Virtual cemetries",
+        "url": "https://www.cemetery.sk/english/?"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.slovakiayp.com/"
+      }
+    ]
+  },
+  "SI": {
+    "name": "Slovenia",
+    "lat": 46.15,
+    "lng": 14.99,
+    "links": [
+      {
+        "title": "Finder of Ljubljana graves",
+        "url": "https://grobovi.zale.si/"
+      },
+      {
+        "title": "Slovenia Yellow Pages",
+        "url": "http://yellow3.eunet.si/yellowpage/a/"
+      }
+    ]
+  },
+  "ZA": {
+    "name": "South Africa",
+    "lat": -30.56,
+    "lng": 22.94,
+    "links": [
+      {
+        "title": "Verify people ID in Ghana, Egypt, Nigeria, Uganda, Kenya, South Africa",
+        "url": "https://appruve.co"
+      },
+      {
+        "title": "South Africa Yellow Pages",
+        "url": "http://www.yellowpages.co.za/"
+      },
+      {
+        "title": "Companies and Intellectual Property Commission search",
+        "url": "http://eservices.cipc.co.za/Search.aspx"
+      },
+      {
+        "title": "OSINT South Africa start.me page",
+        "url": "https://start.me/p/KMAbkB/osint-south-africa"
+      }
+    ]
+  },
+  "KR": {
+    "name": "South Korea",
+    "lat": 35.91,
+    "lng": 127.77,
+    "links": [
+      {
+        "title": "bus.go.kr",
+        "url": "https://bus.go.kr/searchResult6.jsp"
+      },
+      {
+        "title": "Korean osint tools collection",
+        "url": "https://github.com/SwanLeeSec/rokinttool"
+      },
+      {
+        "title": "ftc.go.kr",
+        "url": "https://www.ftc.go.kr/www/bizCommList.do?key=232"
+      },
+      {
+        "title": "Korea Yellow Pages",
+        "url": "http://www.southkoreapages.com/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.southkoreayp.com/"
+      },
+      {
+        "title": "Sex Offenders Database",
+        "url": "https://www.sexoffender.go.kr/indexN.nsc"
+      },
+      {
+        "title": "Medium article Korean OSINT Tips",
+        "url": "https://osintstan.medium.com/top-five-korean-osint-tips-b578e2dec010"
+      }
+    ]
+  },
+  "SS": {
+    "name": "South Sudan",
+    "lat": 6.88,
+    "lng": 31.31,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "http://portals.landfolio.com/southsudan/"
+      }
+    ]
+  },
+  "ES": {
+    "name": "Spain",
+    "lat": 40.46,
+    "lng": -3.75,
+    "links": [
+      {
+        "title": "Interactive Map",
+        "url": "https://www.barcelona-tourist-guide.com/en/maps/barcelona-map.html"
+      },
+      {
+        "title": "sedecatastro.gob.es",
+        "url": "https://www1.sedecatastro.gob.es/CYCBienInmueble/OVCBusqueda.aspx"
+      },
+      {
+        "title": "oscaro.es",
+        "url": "https://www.oscaro.es/"
+      },
+      {
+        "title": "Spain Yellow Pages",
+        "url": "http://www.paginasamarillas.es/"
+      },
+      {
+        "title": "Companies information search",
+        "url": "https://www.infocif.es/buscador/#/"
+      },
+      {
+        "title": "Mobile operator detector",
+        "url": "https://numeracionyoperadores.cnmc.es/portabilidad/movil"
+      },
+      {
+        "title": "Directorate General of Traffic",
+        "url": "https://sedeapl.dgt.gob.es/WEB_TTRA_CONSULTA/Todos.faces?idioma=es"
+      },
+      {
+        "title": "SEC property search engine",
+        "url": "https://www1.sedecatastro.gob.es/cycbieninmueble/ovcbusqueda.aspx"
+      },
+      {
+        "title": "Librebor companies database",
+        "url": "https://librebor.me/en/"
+      }
+    ]
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "lat": 7.87,
+    "lng": 80.77,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.lankayp.com/"
+      }
+    ]
+  },
+  "SD": {
+    "name": "Sudan",
+    "lat": 12.86,
+    "lng": 30.22,
+    "links": [
+      {
+        "title": "Yellow pages",
+        "url": "https://www.sudanyp.com/"
+      }
+    ]
+  },
+  "SR": {
+    "name": "Suriname",
+    "lat": 3.92,
+    "lng": -56.03,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.surinamyp.com/"
+      }
+    ]
+  },
+  "SE": {
+    "name": "Sweden",
+    "lat": 60.13,
+    "lng": 18.64,
+    "links": [
+      {
+        "title": "Sweden Business Finder",
+        "url": "http://www.proff.se/"
+      },
+      {
+        "title": "Mobile operator information by phone number",
+        "url": "https://nummer.pts.se/NbrSearch"
+      },
+      {
+        "title": "Tax information search",
+        "url": "https://www.upplysning.se"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.swedyello.com/"
+      },
+      {
+        "title": "Offers scans of Swedish newspapers dating from 1884-2022",
+        "url": "https://paperarchive-prod.svd.se/"
+      },
+      {
+        "title": "People search",
+        "url": "https://mrkoll.se/"
+      }
+    ]
+  },
+  "CH": {
+    "name": "Switzerland",
+    "lat": 46.82,
+    "lng": 8.23,
+    "links": [
+      {
+        "title": "License plates info",
+        "url": "https://www.iten-online.ch/"
+      },
+      {
+        "title": "map.geo.admin.ch",
+        "url": "https://map.geo.admin.ch/?lang=de&topic=cadastre&bgLayer=ch.swisstopo.pixelkarte-farbe&E=2600163.86&N=1199711.79&zoom=8.880769760770255&layers_visibility=true,false"
+      },
+      {
+        "title": "zefix.admin.ch",
+        "url": "https://www.zefix.admin.ch/en/search/entity/welcome"
+      },
+      {
+        "title": "Switzerland Business Directory",
+        "url": "http://www.branchenbuch.ch/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.swissyello.com/"
+      },
+      {
+        "title": "Swiss Online Investigation Toolkit",
+        "url": "https://cybdetective.com/osintmap/%3C/br%3E%3Ca%20href="
+      },
+      {
+        "title": "Business registry",
+        "url": "https://tel.search.ch/%3EPhone%20book%3C/a%3E%3C/br%3E%3Ca%20href="
+      },
+      {
+        "title": "License plates search",
+        "url": "https://www.viacar.ch/eindex/login.aspx?kanton=ZH"
+      }
+    ]
+  },
+  "SY": {
+    "name": "Syria",
+    "lat": 34.8,
+    "lng": 39.0,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.syriayp.com/"
+      }
+    ]
+  },
+  "TW": {
+    "name": "Taiwan",
+    "lat": 23.7,
+    "lng": 120.96,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "http://taiwanyello.com/"
+      },
+      {
+        "title": "Business lookup",
+        "url": "https://findbiz.nat.gov.tw/fts/query/QueryBar/queryInit.do?request_locale=en&fhl=en"
+      }
+    ]
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "lat": 38.86,
+    "lng": 71.28,
+    "links": [
+      {
+        "title": "andoz.tj",
+        "url": "https://andoz.tj/Fehrist/Ur?culture=ru-RU"
+      }
+    ]
+  },
+  "TZ": {
+    "name": "Tanzania",
+    "lat": -6.37,
+    "lng": 34.89,
+    "links": [
+      {
+        "title": "portal.madini.go.tz",
+        "url": "http://portal.madini.go.tz/map/"
+      },
+      {
+        "title": "Tanzania Pages",
+        "url": "https://www.tanzapages.com/"
+      },
+      {
+        "title": "Utalii Directory",
+        "url": "https://www.utaliidirectory.com/"
+      }
+    ]
+  },
+  "TH": {
+    "name": "Thailand",
+    "lat": 15.87,
+    "lng": 100.99,
+    "links": [
+      {
+        "title": "Livestream of 20 main stream area",
+        "url": "http://streaming.udoncity.go.th/index.php"
+      },
+      {
+        "title": "BBK Traffic Cams",
+        "url": "http://www.bmatraffic.com/index.aspx"
+      },
+      {
+        "title": "Cadastral map",
+        "url": "https://landsmaps.dol.go.th/"
+      },
+      {
+        "title": "Court records",
+        "url": "https://decision.coj.go.th/"
+      },
+      {
+        "title": "Department of Bussiness Development",
+        "url": "https://datawarehouse.dbd.go.th"
+      },
+      {
+        "title": "Revenue Departament Service REST ID (get info by tax id number)",
+        "url": "https://zenateconnect.github.io/RevenueDepartmentService/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.thaiyello.com/"
+      },
+      {
+        "title": "Awesome Thai OSINT Github repo",
+        "url": "https://github.com/wasdee/awesome-osint-thai"
+      }
+    ]
+  },
+  "TG": {
+    "name": "Togo",
+    "lat": 8.62,
+    "lng": 0.82,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "https://portals.landfolio.com/togo/en/"
+      },
+      {
+        "title": "Business search",
+        "url": "https://www.togo.afrium.com/"
+      }
+    ]
+  },
+  "TT": {
+    "name": "Trinidad and Tobago",
+    "lat": 10.69,
+    "lng": -61.22,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.tntyellow.com/"
+      },
+      {
+        "title": "Medical registry",
+        "url": "http://www.mbtt.org/NationalRegister.htm"
+      }
+    ]
+  },
+  "TN": {
+    "name": "Tunisia",
+    "lat": 33.89,
+    "lng": 9.54,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.tunisiayp.com/"
+      }
+    ]
+  },
+  "TR": {
+    "name": "Turkey",
+    "lat": 38.96,
+    "lng": 35.24,
+    "links": [
+      {
+        "title": "cbs.ogm.gov.tr",
+        "url": "https://cbs.ogm.gov.tr/vatandas/"
+      },
+      {
+        "title": "Competition Authority",
+        "url": "https://www.rekabet.gov.tr/tr/Davalar"
+      },
+      {
+        "title": "Yellow/White pages",
+        "url": "http://www.ttrehber.turktelekom.com.tr/?type=white"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "http://turkishyello.com/"
+      },
+      {
+        "title": "Courts search",
+        "url": "http://emsal.uyap.gov.tr/BilgiBankasiIstemciWeb/"
+      },
+      {
+        "title": "Trade registry",
+        "url": "https://www.ticaretsicil.gov.tr/"
+      },
+      {
+        "title": "Official association registry",
+        "url": "https://www.turkiye.gov.tr/icisleri-ddb-dernek-sorgulama"
+      },
+      {
+        "title": "Foundation registry",
+        "url": "https://www.vgm.gov.tr/vakif-sorgulama/vakif-sorgulama?Page=1"
+      },
+      {
+        "title": "NGO database (unofficial)",
+        "url": "https://bilgece.net/sosyal-sorumluluk-stk-rehberi-tr.htm"
+      }
+    ]
+  },
+  "AE": {
+    "name": "UAE",
+    "lat": 23.42,
+    "lng": 53.85,
+    "links": [
+      {
+        "title": "White Pages",
+        "url": "http://www.whitepages.ae"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://yello.ae/"
+      }
+    ]
+  },
+  "UG": {
+    "name": "Uganda",
+    "lat": 1.37,
+    "lng": 32.29,
+    "links": [
+      {
+        "title": "portals.flexicadastre.com",
+        "url": "http://portals.flexicadastre.com/uganda/"
+      },
+      {
+        "title": "Uganda Yellow Pages",
+        "url": "http://www.yellowpages-uganda.com/"
+      },
+      {
+        "title": "Yellow Pages 2",
+        "url": "https://www.yellow.ug/"
+      }
+    ]
+  },
+  "UA": {
+    "name": "Ukraine",
+    "lat": 48.38,
+    "lng": 31.17,
+    "links": [
+      {
+        "title": "map.land.gov.ua",
+        "url": "https://map.land.gov.ua/?cc=3461340.1719504707,6177585.367221659&z=6.5&l=kadastr&bl=ortho10k_all"
+      },
+      {
+        "title": "eway.in.ua",
+        "url": "https://www.eway.in.ua/en/cities/kyiv/routes"
+      },
+      {
+        "title": "Unified Contact Center of the Judiciary of Ukraine",
+        "url": "https://court.gov.ua/fair/"
+      },
+      {
+        "title": "Unified state register of court decisions",
+        "url": "https://reyestr.court.gov.ua/"
+      },
+      {
+        "title": "Ukraine Yellow Pages",
+        "url": "http://www.ukraine.org/www.ukrainet.lviv.ua/yellow/pages.htm"
+      },
+      {
+        "title": "Grave search",
+        "url": "https://ripsearch.youmust.click/ua/search.html"
+      },
+      {
+        "title": "Ukraine 2022 Geoint archives",
+        "url": "https://github.com/mapconcierge/Ukraine2022data/"
+      },
+      {
+        "title": "Holodomor Victmims Database",
+        "url": "http://victimsholodomor.org.ua/"
+      },
+      {
+        "title": "Otkudarodom.ua (genealogical search)",
+        "url": "https://otkudarodom.ua/ru"
+      }
+    ]
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "lat": 55.38,
+    "lng": -3.44,
+    "links": [
+      {
+        "title": "Bus routes and timetables",
+        "url": "http://www.essexbus.info/map.html"
+      },
+      {
+        "title": "apps.london.gov.uk",
+        "url": "https://apps.london.gov.uk/public-land/"
+      },
+      {
+        "title": "Live London Buses",
+        "url": "https://traintimes.org.uk/map/london-buses/#73"
+      },
+      {
+        "title": "London Pictures Map (100 000+)",
+        "url": "https://www.londonpicturearchive.org.uk/london-picture-map"
+      },
+      {
+        "title": "London street trees map",
+        "url": "https://apps.london.gov.uk/street-trees/"
+      },
+      {
+        "title": "The Scottish Emigration Database 1890 - 1960",
+        "url": "https://www.abdn.ac.uk/emigration/search.html"
+      },
+      {
+        "title": "Scottish courts and tribunals (Hight Court)",
+        "url": "https://www.scotcourts.gov.uk/search-judgments/high-court"
+      },
+      {
+        "title": "Scottish courts and tribunals (Court of Session)",
+        "url": "https://www.scotcourts.gov.uk/search-judgments/court-of-session"
+      },
+      {
+        "title": "Scottish courts and tribunals (Sheriff court)",
+        "url": "https://www.scotcourts.gov.uk/search-judgments/sheriff-court"
+      },
+      {
+        "title": "Scottish courts and tribunals (Sheriff appeal court — criminal)",
+        "url": "https://www.scotcourts.gov.uk/search-judgments/sheriff-appeal-court-judgment"
+      },
+      {
+        "title": "Scottish courts and tribunals (Sheriff appeal court —   civil)",
+        "url": "https://www.scotcourts.gov.uk/search-judgments/sheriff-appeal-court---civil"
+      },
+      {
+        "title": "Scottish courts and tribunals (National Personal Injury Judgments)",
+        "url": "https://www.scotcourts.gov.uk/search-judgments/national-personal-injury-judgments"
+      },
+      {
+        "title": "Scotland Spatialhub Datasets",
+        "url": "https://data.spatialhub.scot/dataset"
+      },
+      {
+        "title": "Search people records",
+        "url": "https://www.scotlandspeople.gov.uk/search-our-records"
+      },
+      {
+        "title": "beta.companieshouse.gov.uk",
+        "url": "https://beta.companieshouse.gov.uk/search/companies"
+      },
+      {
+        "title": "Leaving UK 1890-1960",
+        "url": "https://search.findmypast.co.uk/search-world-records/passenger-lists-leaving-uk-1890-1960"
+      },
+      {
+        "title": "Global Stories: passengers and crew of SS Great Britain",
+        "url": "https://globalstories.ssgreatbritain.org/"
+      },
+      {
+        "title": "carcheck.co.uk",
+        "url": "https://www.carcheck.co.uk/reg"
+      },
+      {
+        "title": "UK Business Directory",
+        "url": "http://www.scoot.co.uk/"
+      },
+      {
+        "title": "UK Online Business Directory",
+        "url": "https://www.yell.com/"
+      },
+      {
+        "title": "Business Directory",
+        "url": "http://www.the-internet-pages.co.uk/"
+      },
+      {
+        "title": "UK Phone Book",
+        "url": "http://www.ukphonebook.com/"
+      },
+      {
+        "title": "Census Data Online",
+        "url": "https://ukcensusonline.com/search/"
+      },
+      {
+        "title": "Grave Stone Photos",
+        "url": "https://www.gravestonephotos.com/search/fullnamesearch.php"
+      },
+      {
+        "title": "List of convicted sex offenders",
+        "url": "https://www.ibbclaims.co.uk/site/services/child-abuse-and-trafficking/convicted-offenders/"
+      },
+      {
+        "title": "192.com phone directory",
+        "url": "https://www.192.com/"
+      },
+      {
+        "title": "Legislation search",
+        "url": "https://www.legislation.gov.uk/primary+secondary?title=hate%20crime"
+      },
+      {
+        "title": "Medical registry",
+        "url": "https://www.gmc-uk.org/registration-and-licensing/the-medical-register"
+      },
+      {
+        "title": "OSINT United Kingdom resources start.me pages",
+        "url": "https://start.me/p/gyq0Rz/united-kingdom"
+      }
+    ]
+  },
+  "US": {
+    "name": "United States",
+    "lat": 37.09,
+    "lng": -95.71,
+    "links": [
+      {
+        "title": "UnclaimedProperty Database",
+        "url": "https://alabama.findyourunclaimedproperty.com/"
+      },
+      {
+        "title": "Check Medical License",
+        "url": "https://abme.igovsolution.net/online/Lookups/Application_StatusCheck.aspx"
+      },
+      {
+        "title": "Ancestry: \"All Alaska, U.S., Lists of Alien Arrivals, 1906-1956\"",
+        "url": "https://www.ancestry.com/search/collections/1056/"
+      },
+      {
+        "title": "Albania Yellow/White Pages",
+        "url": "http://albanianyellowpages.com"
+      },
+      {
+        "title": "track-it.avta.com",
+        "url": "https://track-it.avta.com/"
+      },
+      {
+        "title": "Business Search",
+        "url": "https://www.arempresas.com/"
+      },
+      {
+        "title": "Public Notary Database",
+        "url": "https://apps.azsos.gov/apps/notary/search/Default.aspx"
+      },
+      {
+        "title": "Trademark database",
+        "url": "https://apps.azsos.gov/apps/tntp/se.html"
+      },
+      {
+        "title": "Search Incorporations, Cooperatives, Banks and Insurance Companies",
+        "url": "https://www.sos.arkansas.gov/corps/search_all.php"
+      },
+      {
+        "title": "Ancestry: \"Baltimore, Passenger Lists, 1820-1964\"",
+        "url": "https://www.ancestry.com/search/collections/8679/"
+      },
+      {
+        "title": "Business Search",
+        "url": "https://businesssearch.sos.ca.gov/"
+      },
+      {
+        "title": "Mobile Carier Lookup",
+        "url": "https://freecarrierlookup.com/"
+      },
+      {
+        "title": "State archive incorporations records",
+        "url": "https://archives.colorado.gov/collections/history/incorporation-records"
+      },
+      {
+        "title": "seatbuslive.com",
+        "url": "https://seatbuslive.com/map"
+      },
+      {
+        "title": "Department of State: Division of Corporations",
+        "url": "https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx"
+      },
+      {
+        "title": "Universal documents (deeds, mortgages, jugment orders, lis pendens etc) search by name, surname address",
+        "url": "https://recorder.dupageco.org/Search.aspx"
+      },
+      {
+        "title": "Search Corporations, Limited Liability Companies, Limited Partnerships, and Trademarks",
+        "url": "https://dos.myflorida.com/sunbiz/search/"
+      },
+      {
+        "title": "Galveston Seaport Immigration Database 1844 - 1967",
+        "url": "http://ghf.destinationnext.com/immigration/Search.aspx"
+      },
+      {
+        "title": "Real Estate Index Search",
+        "url": "https://search.gsccca.org/RealEstate/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://georgiayp.com/"
+      },
+      {
+        "title": "Hawaii.gov: \"Chinese Passenger Manifests\" 1843-1900",
+        "url": "https://digitalcollections.hawaii.gov/greenstone3/library/collection/indextoc/page/about"
+      },
+      {
+        "title": "Japanese Passenger Manifests\" 1843-1900",
+        "url": "https://digitalcollections.hawaii.gov/greenstone3/library/collection/indextoj/page/about"
+      },
+      {
+        "title": "Hawaii.gov: \"Portuguese Passenger Manifests\" 1843-1900",
+        "url": "https://digitalcollections.hawaii.gov/greenstone3/library/collection/indextop/page/about"
+      },
+      {
+        "title": "Corporates search",
+        "url": "https://www.ilsos.gov/corporatellc/"
+      },
+      {
+        "title": "Business Search",
+        "url": "https://www.in.gov/core/mobile/business-search.html"
+      },
+      {
+        "title": "Business Search",
+        "url": "https://sos.iowa.gov/search/business/search.aspx"
+      },
+      {
+        "title": "Business search",
+        "url": "https://www.kansas.gov/bess/"
+      },
+      {
+        "title": "Online Venicle Information System",
+        "url": "https://kentucky.gov/Services/Pages/ovis.aspx"
+      },
+      {
+        "title": "Court case search",
+        "url": "https://kycourts.gov/Pages/index.aspx"
+      },
+      {
+        "title": "Ladotbus.com",
+        "url": "https://www.ladotbus.com/map"
+      },
+      {
+        "title": "Search Business Filings",
+        "url": "https://www.sos.la.gov/BusinessServices/SearchForLouisianaBusinessFilings/Pages/default.aspx"
+      },
+      {
+        "title": "Lanf and Marriage records search",
+        "url": "https://www.laclerksportal.org/"
+      },
+      {
+        "title": "Corporation search",
+        "url": "https://www.maine.gov/sos/cec/corp/"
+      },
+      {
+        "title": "Registry of deeds",
+        "url": "https://www.maineregistryofdeeds.com/"
+      },
+      {
+        "title": "The ark of the dove",
+        "url": "https://www.thearkandthedove.com/"
+      },
+      {
+        "title": "Ancestry: \"All Massachusetts, U.S., Arriving Passenger and Crew Lists, 1820-1963\"",
+        "url": "https://www.ancestry.com/search/collections/8745/"
+      },
+      {
+        "title": "VIR Number Lookup Tool",
+        "url": "https://www.mavehiclecheck.com/apps/vir-lookup-tool"
+      },
+      {
+        "title": "Business search",
+        "url": "https://cofs.lara.state.mi.us/SearchApi/Search/Search"
+      },
+      {
+        "title": "Search driver and venicle services",
+        "url": "https://dps.mn.gov/divisions/dvs/Pages/search-dvs.aspx"
+      },
+      {
+        "title": "Departament of Labor and Industry search",
+        "url": "https://secure.doli.state.mn.us/lookup/licensing.aspx"
+      },
+      {
+        "title": "Business search",
+        "url": "https://corp.sos.ms.gov/corp/portal/c/page/corpBusinessIdSearch/portal.aspx"
+      },
+      {
+        "title": "Business search",
+        "url": "https://www.sos.mo.gov/BusinessEntity/soskb/csearch.asp"
+      },
+      {
+        "title": "License lookup",
+        "url": "https://mtrevenue.gov/licenses/"
+      },
+      {
+        "title": "License information system search",
+        "url": "https://www.nebraska.gov/LISSearch/search.cgi"
+      },
+      {
+        "title": "Search bills and resolutions",
+        "url": "https://nebraskalegislature.gov/bills/"
+      },
+      {
+        "title": "Entity search",
+        "url": "https://www.secstates.com/NV_Nevada_Secretary_of_State_Corporation_Search"
+      },
+      {
+        "title": "Unclaimed property search",
+        "url": "https://newhampshire.findyourunclaimedproperty.com/app/claim-search"
+      },
+      {
+        "title": "Public courts search",
+        "url": "https://portal.njcourts.gov/webcivilcj/CIVILCaseJacketWeb/pages/publicAccessDisclaimer.faces"
+      },
+      {
+        "title": "Business search",
+        "url": "https://portal.sos.state.nm.us/BFS/online/corporationbusinesssearch"
+      },
+      {
+        "title": "Castle Garden Passenger List: 1820 - 1913",
+        "url": "http://www.castlegarden.org/searcher.php"
+      },
+      {
+        "title": "Ellis Island Passenger Search database New York 1820 - 1957",
+        "url": "https://heritage.statueofliberty.org/"
+      },
+      {
+        "title": "Who owns what in nyc? (Find other buildings your landlord might own)",
+        "url": "https://whoownswhat.justfix.org/en/"
+      },
+      {
+        "title": "NYC Language Map",
+        "url": "https://languagemap.nyc/"
+      },
+      {
+        "title": "Tax Warrants Search",
+        "url": "https://www.tax.ny.gov/enforcement/warrant-search.htm"
+      },
+      {
+        "title": "Business search",
+        "url": "https://www.sosnc.gov/online_services/search/by_title/_Business_Registration"
+      },
+      {
+        "title": "Court records search",
+        "url": "https://publicsearch.ndcourts.gov/"
+      },
+      {
+        "title": "Business search",
+        "url": "https://firststop.sos.nd.gov/search"
+      },
+      {
+        "title": "Business search",
+        "url": "https://businesssearch.ohiosos.gov/"
+      },
+      {
+        "title": "Business search",
+        "url": "https://www.sos.ok.gov/corp/corpInquiryFind.aspx"
+      },
+      {
+        "title": "Court records search",
+        "url": "https://okcountyrecords.com/"
+      },
+      {
+        "title": "Business search",
+        "url": "https://secure.sos.state.or.us/cbrmanager/"
+      },
+      {
+        "title": "Public courts search",
+        "url": "https://owyheecounty.net/departments/courts/court-records/"
+      },
+      {
+        "title": "Public records search",
+        "url": "https://www.pacourts.us/public-records"
+      },
+      {
+        "title": "Business search",
+        "url": "https://www.puertoricoindex.com/"
+      },
+      {
+        "title": "Business search",
+        "url": "https://search-sos.org/rhode-island-ri-business-entity-corporation-search/"
+      },
+      {
+        "title": "Business search",
+        "url": "https://businessfilings.sc.gov/BusinessFiling/Entity/Search"
+      },
+      {
+        "title": "Business search",
+        "url": "https://sos.nd.gov/business/business-services/business-records-search"
+      },
+      {
+        "title": "Titanic Passengers 1912",
+        "url": "https://www.lva.virginia.gov/exhibits/titanic/passengers.php"
+      },
+      {
+        "title": "Business search",
+        "url": "https://sos.tn.gov/products/business-services/business-information-search-0"
+      },
+      {
+        "title": "Taxable enitity search",
+        "url": "https://mycpa.cpa.state.tx.us/coa/"
+      },
+      {
+        "title": "qpublic.schneidercorp.com",
+        "url": "https://qpublic.schneidercorp.com/"
+      },
+      {
+        "title": "slavevoyages.org/voyage/database",
+        "url": "https://www.slavevoyages.org/voyage/database"
+      },
+      {
+        "title": "slavevoyages.org/american/database",
+        "url": "https://www.slavevoyages.org/american/database"
+      },
+      {
+        "title": "slavevoyages.org/resources/names-database",
+        "url": "https://www.slavevoyages.org/resources/names-database"
+      },
+      {
+        "title": "autocheck.com",
+        "url": "https://www.autocheck.com/vehiclehistory/autocheck-score"
+      },
+      {
+        "title": "JudyRecords.com (564 million USA Court Cases",
+        "url": "https://www.judyrecords.com/"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "http://www.superpages.com/"
+      },
+      {
+        "title": "Internet Phone Book",
+        "url": "http://www.switchboard.com/"
+      },
+      {
+        "title": "US Yellow Pages",
+        "url": "http://www.yellowpages.com/"
+      },
+      {
+        "title": "Map shows the locations of critical energy facilities in the U.S",
+        "url": "https://www.bakerinstitute.org/energy-environment-and-policy-in-the-us/"
+      },
+      {
+        "title": "FCC License Search",
+        "url": "https://wireless2.fcc.gov/UlsApp/UlsSearch/searchLicense.jsp"
+      },
+      {
+        "title": "American Archive of Public Boradcasting",
+        "url": "https://americanarchive.org/"
+      },
+      {
+        "title": "US National Archives Resources for Genealogists",
+        "url": "https://www.archives.gov/research/genealogy"
+      },
+      {
+        "title": "National Sex Offenders Database",
+        "url": "https://www.nsopw.gov/"
+      },
+      {
+        "title": "USA Wind Interactive Map",
+        "url": "http://hint.fm/wind/"
+      },
+      {
+        "title": "US Military records database",
+        "url": "https://www.fold3.com/"
+      },
+      {
+        "title": "Historical Aerials Viewer",
+        "url": "https://historicaerials.com/viewer"
+      },
+      {
+        "title": "Business search",
+        "url": "https://secure.utah.gov/bes/"
+      },
+      {
+        "title": "Business search",
+        "url": "https://bizfilings.vermont.gov/online/BusinessInquire"
+      },
+      {
+        "title": "Business search",
+        "url": "https://cis.scc.virginia.gov/"
+      },
+      {
+        "title": "Criminal courts search",
+        "url": "https://dw.courts.wa.gov/?fa=home.namesearchterms"
+      },
+      {
+        "title": "Business search",
+        "url": "https://business.dc.gov/lookup-business"
+      },
+      {
+        "title": "Business search",
+        "url": "https://apps.wv.gov/SOS/BusinessEntitySearch/"
+      },
+      {
+        "title": "Public case search",
+        "url": "https://www.wicourts.gov/casesearch.htm"
+      },
+      {
+        "title": "Business search",
+        "url": "https://www.wdfi.org/apps/CorpSearch/Search.aspx"
+      },
+      {
+        "title": "Business search",
+        "url": "https://wyobiz.wyo.gov/Business/FilingSearch.aspx"
+      }
+    ]
+  },
+  "UY": {
+    "name": "Uruguay",
+    "lat": -32.52,
+    "lng": -55.77,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.yelu.uy/"
+      },
+      {
+        "title": "Investor Service Directory Company Search",
+        "url": "https://www.uruguayxxi.gub.uy/en/services-directory/"
+      }
+    ]
+  },
+  "UZ": {
+    "name": "Uzbekistan",
+    "lat": 41.38,
+    "lng": 64.59,
+    "links": [
+      {
+        "title": "orginfo.uz",
+        "url": "https://orginfo.uz/"
+      },
+      {
+        "title": "Supreme court of the Respublic of Uzbekistan (Criminal cases)",
+        "url": "https://public.sud.uz/#!/sign/criminal"
+      },
+      {
+        "title": "Supreme court of the Respublic of Uzbekistan (Economic cases)",
+        "url": "https://public.sud.uz/#!/sign/economy"
+      },
+      {
+        "title": "Supreme court of the Respublic of Uzbekistan (Administrative cases)",
+        "url": "https://public.sud.uz/#!/sign/administrative"
+      },
+      {
+        "title": "Supreme court of the Respublic of Uzbekistan (Civil cases)",
+        "url": "https://public.sud.uz/#!/sign/civil"
+      },
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.uzbekistanyp.com/"
+      }
+    ]
+  },
+  "VA": {
+    "name": "Vatican City",
+    "lat": 41.9,
+    "lng": 12.45,
+    "links": [
+      {
+        "title": "Vatican City Interactive Map",
+        "url": "https://stpetersbasilica.info/vaticancity-map.htm"
+      }
+    ]
+  },
+  "VE": {
+    "name": "Venezuela",
+    "lat": 6.42,
+    "lng": -66.59,
+    "links": [
+      {
+        "title": "Venezuela Yellow Pages",
+        "url": "http://venezuela.paginasamarillas.com/"
+      }
+    ]
+  },
+  "VN": {
+    "name": "Vietnam",
+    "lat": 14.06,
+    "lng": 108.28,
+    "links": [
+      {
+        "title": "thongtinquyhoach.hochiminhcity.gov.vn",
+        "url": "https://thongtinquyhoach.hochiminhcity.gov.vn/"
+      },
+      {
+        "title": "dichvuthongtin.dkkd.gov.vn",
+        "url": "https://dichvuthongtin.dkkd.gov.vn/inf/default.aspx"
+      }
+    ]
+  },
+  "YE": {
+    "name": "Yemen",
+    "lat": 15.55,
+    "lng": 48.52,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "http://yemenyp.com/"
+      }
+    ]
+  },
+  "ZM": {
+    "name": "Zambia",
+    "lat": -13.13,
+    "lng": 27.85,
+    "links": [
+      {
+        "title": "portals.landfolio.com",
+        "url": "http://portals.landfolio.com/zambia/"
+      },
+      {
+        "title": "Zambia Business Directory",
+        "url": "https://www.zambiayp.com"
+      }
+    ]
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "lat": -19.02,
+    "lng": 29.15,
+    "links": [
+      {
+        "title": "Yellow Pages",
+        "url": "https://www.zimbabweyp.com/"
+      }
+    ]
+  }
+}

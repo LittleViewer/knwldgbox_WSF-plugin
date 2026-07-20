@@ -1,0 +1,330 @@
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, WebSocket, HTTPException, UploadFile, File
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
+from pydantic import BaseModel
+from dotenv import load_dotenv
+import feedparser
+from config import ENV_FILE, ARCHIVES_DIR
+from fastapi.staticfiles import StaticFiles
+import os
+import httpx
+
+from telegram_service import telegram_service
+from sherlock_service import sherlock_service
+import dataleak_service
+import graph_service
+import whois_service
+import collage_service
+import tiktok_service
+import ghunt_service
+import holehe_service
+import maigret_service
+import downloader_service
+import archive_service
+import target_service
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    load_dotenv(dotenv_path=ENV_FILE, override=True)
+    await telegram_service.initialize()
+    yield
+    await telegram_service.disconnect()
+
+
+app = FastAPI(title="KNWLDG OSINT Backend", lifespan=lifespan)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(dataleak_service.router)
+app.include_router(graph_service.router)
+app.include_router(whois_service.router)
+app.include_router(collage_service.router)
+app.include_router(tiktok_service.router)
+app.include_router(ghunt_service.router)
+app.include_router(holehe_service.router)
+app.include_router(maigret_service.router)
+app.include_router(downloader_service.router)
+app.include_router(archive_service.router)
+app.include_router(target_service.router)
+
+app.mount("/archives", StaticFiles(directory=str(ARCHIVES_DIR)), name="archives")
+
+# Pydantic Models for validation
+class SettingsPayload(BaseModel):
+    telegram_api_id: str | None = None
+    telegram_api_hash: str | None = None
+    telegram_phone: str | None = None
+    urlscan_api_key: str | None = None
+    openrouter_api_key: str | None = None
+    openrouter_model: str | None = None
+    openrouter_system_prompt: str | None = None
+
+class AuthCodePayload(BaseModel):
+    code: str
+
+@app.post("/api/settings")
+async def save_settings(payload: SettingsPayload):
+    env_content = ""
+    if payload.telegram_api_id:
+        env_content += f"TG_API_ID={payload.telegram_api_id}\n"
+    if payload.telegram_api_hash:
+        env_content += f"TG_API_HASH={payload.telegram_api_hash}\n"
+    if payload.telegram_phone:
+        env_content += f"TG_PHONE={payload.telegram_phone}\n"
+    if payload.urlscan_api_key:
+        env_content += f"URLSCAN_API_KEY={payload.urlscan_api_key}\n"
+    if payload.openrouter_api_key:
+        env_content += f"OPENROUTER_API_KEY={payload.openrouter_api_key}\n"
+    if payload.openrouter_model:
+        env_content += f"OPENROUTER_MODEL={payload.openrouter_model}\n"
+    if payload.openrouter_system_prompt is not None:
+        import base64
+        encoded = base64.b64encode(payload.openrouter_system_prompt.encode('utf-8')).decode('utf-8')
+        env_content += f"OPENROUTER_SYSTEM_PROMPT={encoded}\n"
+        
+    with open(ENV_FILE, "w") as f:
+        f.write(env_content)
+        
+    # Reload environment explicitly
+    load_dotenv(dotenv_path=ENV_FILE, override=True)
+    return await telegram_service.initialize()
+
+@app.post("/api/telegram/auth/send_code")
+async def send_code():
+    try:
+        return await telegram_service.send_auth_code()
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/telegram/auth/verify_code")
+async def verify_code(payload: AuthCodePayload):
+    try:
+        return await telegram_service.verify_auth_code(payload.code)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.get("/api/rss")
+async def get_rss_feed(url: str):
+    try:
+        feed = feedparser.parse(url)
+        if feed.bozo and not feed.entries:
+            return {"status": "error", "message": "Invalid RSS feed."}
+
+        entries = [
+            {
+                "title": entry.get("title", "No Title"),
+                "link": entry.get("link", "#"),
+                "published": entry.get("published", ""),
+                "summary": (entry.get("summary", "")[:200] + "...") if entry.get("summary") else ""
+            }
+            for entry in feed.entries[:15]
+        ]
+
+        return {
+            "title": feed.feed.get("title", "RSS Feed"),
+            "entries": entries
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/rss/upload")
+async def upload_rss_feed(file: UploadFile = File(...)):
+    try:
+        content = await file.read()
+        feed = feedparser.parse(content)
+        if feed.bozo and not feed.entries:
+            return {"status": "error", "message": "Invalid RSS feed."}
+
+        entries = [
+            {
+                "title": entry.get("title", "No Title"),
+                "link": entry.get("link", "#"),
+                "published": entry.get("published", ""),
+                "summary": (entry.get("summary", "")[:200] + "...") if entry.get("summary") else ""
+            }
+            for entry in feed.entries[:15]
+        ]
+
+        return {
+            "title": feed.feed.get("title", "Local RSS File"),
+            "entries": entries
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+class RssSummarizeRequest(BaseModel):
+    entries: list
+    api_key: str | None = None
+    model: str | None = None
+    language: str | None = None
+
+@app.post("/api/rss/summarize")
+async def summarize_rss(req: RssSummarizeRequest):
+    api_key = req.api_key or os.getenv("OPENROUTER_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=400, detail="OpenRouter API Key not found. Please add it to your .env file or Settings.")
+
+    ai_model = req.model or os.getenv("OPENROUTER_MODEL") or "openrouter/free"
+
+    sys_prompt = None
+    sys_prompt_b64 = os.getenv("OPENROUTER_SYSTEM_PROMPT")
+    if sys_prompt_b64:
+        import base64
+        try:
+            sys_prompt = base64.b64decode(sys_prompt_b64).decode('utf-8')
+        except:
+            pass
+
+    if sys_prompt:
+        prompt = sys_prompt + "\\n\\nHere are the RSS feed entries:\\n\\n"
+    elif req.language == "fr":
+        prompt = "Vous êtes un analyste en renseignement professionnel et objectif. Veuillez fournir une synthèse exécutive des entrées de flux RSS suivantes du jour. Regroupez les sujets similaires, mettez en évidence les événements critiques ou les menaces, et maintenez un ton formel et analytique. Utilisez des émojis pertinents uniquement pour les titres majeurs afin de faciliter la lecture. Formatez votre réponse en Markdown propre et structuré :\\n\\n"
+    else:
+        prompt = "You are a professional, objective intelligence analyst. Please provide an executive summary of the following RSS feed entries from today. Group similar topics, highlight critical events or threats, and maintain a formal, analytical tone. Use relevant emojis only for major section titles to improve readability. Format your response in clean, structured Markdown:\\n\\n"
+        
+    for idx, entry in enumerate(req.entries):
+        time_str = f" [{entry.get('time')}]" if entry.get('time') else ""
+        prompt += f"{idx+1}. {entry.get('title')}{time_str} - {entry.get('summary')}\\n"
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "HTTP-Referer": "http://localhost:5173",
+        "X-Title": "KNWLDGBox",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "model": ai_model,
+        "messages": [{"role": "user", "content": prompt}]
+    }
+    
+    try:
+        async with httpx.AsyncClient() as client:
+            res = await client.post("https://openrouter.ai/api/v1/chat/completions", json=payload, headers=headers, timeout=90.0)
+            
+        if res.status_code != 200:
+            raise HTTPException(status_code=res.status_code, detail=f"OpenRouter API error: {res.text}")
+            
+        data = res.json()
+        if "choices" not in data or not data["choices"]:
+            raise HTTPException(status_code=500, detail=f"Unexpected OpenRouter response: {data}")
+
+        return {"status": "success", "summary": data["choices"][0]["message"]["content"]}
+    except HTTPException:
+        raise
+    except httpx.ReadTimeout:
+        raise HTTPException(status_code=504, detail="AI generation timed out. The selected model is too slow or overloaded. Please try another model.")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+class ChatRequest(BaseModel):
+    messages: list
+    api_key: str | None = None
+    model: str | None = None
+
+@app.post("/api/chat")
+async def chat_completion(req: ChatRequest):
+    api_key = req.api_key or os.getenv("OPENROUTER_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=400, detail="OpenRouter API Key not found. Please add it to your Settings.")
+
+    ai_model = req.model or os.getenv("OPENROUTER_MODEL") or "openrouter/free"
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "HTTP-Referer": "http://localhost:5173",
+        "X-Title": "KNWLDGBox",
+        "Content-Type": "application/json"
+    }
+    
+    # Inject system prompt if available
+    sys_prompt_b64 = os.getenv("OPENROUTER_SYSTEM_PROMPT")
+    if sys_prompt_b64:
+        import base64
+        try:
+            sys_prompt = base64.b64decode(sys_prompt_b64).decode('utf-8')
+            if req.messages and req.messages[0].get("role") != "system":
+                req.messages.insert(0, {"role": "system", "content": sys_prompt})
+        except:
+            pass
+
+    payload = {
+        "model": ai_model,
+        "messages": req.messages
+    }
+    
+    try:
+        async with httpx.AsyncClient() as client:
+            res = await client.post("https://openrouter.ai/api/v1/chat/completions", json=payload, headers=headers, timeout=120.0)
+            
+        if res.status_code != 200:
+            raise HTTPException(status_code=res.status_code, detail=f"OpenRouter API error: {res.text}")
+            
+        data = res.json()
+        if "choices" not in data or not data["choices"]:
+            raise HTTPException(status_code=500, detail=f"Unexpected OpenRouter response: {data}")
+
+        return {"status": "success", "message": data["choices"][0]["message"]}
+    except HTTPException:
+        raise
+    except httpx.ReadTimeout:
+        raise HTTPException(status_code=504, detail="AI generation timed out.")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/telegram/media/{channel}/{message_id}")
+async def get_telegram_media(channel: str, message_id: int):
+    if not telegram_service.client or not telegram_service.client.is_connected():
+        raise HTTPException(status_code=400, detail="Telegram client not connected")
+    
+    try:
+        msg = await telegram_service.client.get_messages(channel, ids=message_id)
+        if not msg or not getattr(msg, "media", None):
+            raise HTTPException(status_code=404, detail="Media not found")
+            
+        buffer = await telegram_service.client.download_media(msg, file=bytes)
+        if not buffer:
+            raise HTTPException(status_code=500, detail="Failed to download media")
+            
+        mime_type = "application/octet-stream"
+        if hasattr(msg, 'file') and msg.file and getattr(msg.file, 'mime_type', None):
+            mime_type = msg.file.mime_type
+            
+        return Response(content=buffer, media_type=mime_type)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.websocket("/ws/telegram")
+async def websocket_endpoint(websocket: WebSocket):
+    await telegram_service.handle_websocket(websocket)
+
+@app.websocket("/ws/sherlock")
+async def sherlock_endpoint(websocket: WebSocket):
+    await sherlock_service.handle_websocket(websocket)
+
+# ── Serve pre-built frontend (production / installed mode) ────────
+# Must be the LAST mount so /api/* and /ws/* routes take priority.
+# In dev mode, app/dist won't exist and this block is skipped entirely.
+from config import APP_DIR
+from starlette.exceptions import HTTPException as StarletteHTTPException
+
+class SPAStaticFiles(StaticFiles):
+    async def get_response(self, path: str, scope):
+        try:
+            return await super().get_response(path, scope)
+        except (HTTPException, StarletteHTTPException) as ex:
+            if ex.status_code == 404:
+                return await super().get_response("index.html", scope)
+            raise
+
+_frontend_dist = APP_DIR.parent / "app" / "dist"
+if _frontend_dist.is_dir():
+    app.mount("/", SPAStaticFiles(directory=str(_frontend_dist), html=True), name="frontend")
+

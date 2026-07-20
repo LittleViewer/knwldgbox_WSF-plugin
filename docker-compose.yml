@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  knwldgbox:
+    build: .
+    image: knwldgbox:latest
+    container_name: knwldgbox
+    ports:
+      # Binds exclusively to localhost for security (no LAN exposure)
+      - "127.0.0.1:8000:8000"
+    volumes:
+      # Application data (archives, graphs, env file)
+      - ./data/app:/data/knwldgbox
+      # Export media downloads directly to host's Downloads folder
+      - ~/Downloads/KNWLDGBox:/data/knwldgbox/data/downloads
+      # Persist GHunt authentication state
+      - ./data/ghunt:/root/.malfrats/ghunt
+    restart: unless-stopped
