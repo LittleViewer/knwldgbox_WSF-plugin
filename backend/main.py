@@ -120,6 +120,8 @@ async def verify_code(payload: AuthCodePayload):
 
 @app.get("/api/rss")
 async def get_rss_feed(url: str):
+    if not url.startswith(("http://", "https://")):
+        raise HTTPException(status_code=400, detail="Only HTTP/HTTPS URLs are allowed.")
     try:
         feed = feedparser.parse(url)
         if feed.bozo and not feed.entries:

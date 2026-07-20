@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments & Secrets
+venv/
+.venv/
+knwldg/
+env/
+.env
+.env.*
+
+# Node / Frontend
+app/node_modules/
+app/dist/
+app/dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# KNWLDGBox Specific Secrets and Data
+.ghunt/
+*.session
+data/
+archives/
+*.sqlite3
+*.db
+
+# Test Files
+tests/
+test_*.py
+*_test.py
+*.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

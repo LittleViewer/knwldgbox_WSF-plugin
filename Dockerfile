@@ -53,6 +53,10 @@ RUN mkdir -p /data/knwldgbox
 # Expose the API port
 EXPOSE 8000
 
+# Create a non-root user for security
+RUN useradd -r -u 10001 -m knwldg && chown -R knwldg:knwldg /opt/knwldgbox /data
+USER knwldg
+
 # Start FastAPI server binding to 0.0.0.0 (Docker networking handles isolation)
 WORKDIR /opt/knwldgbox/backend
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

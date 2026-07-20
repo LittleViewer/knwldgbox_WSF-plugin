@@ -62,6 +62,10 @@ async def downloader_ws(websocket: WebSocket):
         download_format = request.get("format", "best")
         
         if action == "download" and url:
+            if not url.startswith(("http://", "https://")):
+                await websocket.send_json({"type": "error", "text": "Only HTTP/HTTPS URLs are allowed."})
+                return
+            
             output_template = str(DOWNLOADS_DIR / "%(title)s.%(ext)s")
             
             cmd = [
