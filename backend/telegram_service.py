@@ -27,7 +27,8 @@ class TelegramService:
         if self.client:
             await self.client.disconnect()
 
-        self.client = TelegramClient('anon', int(api_id), api_hash)
+        from config import SESSION_NAME
+        self.client = TelegramClient(SESSION_NAME, int(api_id), api_hash)
         
         try:
             await self.client.connect()

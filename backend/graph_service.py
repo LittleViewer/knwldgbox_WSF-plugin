@@ -116,20 +116,4 @@ async def rename_graph(filename: str, payload: RenameData):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-class ExportAbsoluteData(BaseModel):
-    path: str
-    data: dict
 
-@router.post("/api/graphs/export_absolute")
-async def export_graph_absolute(payload: ExportAbsoluteData):
-    out_path = Path(payload.path).expanduser().resolve()
-    if not out_path.is_absolute():
-        raise HTTPException(status_code=400, detail="Path must be absolute")
-    
-    try:
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        with out_path.open('w', encoding='utf-8') as f:
-            json.dump(payload.data, f, indent=2)
-        return {"status": "success", "path": str(out_path)}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
