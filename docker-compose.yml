@@ -6,8 +6,8 @@ services:
     image: knwldgbox:latest
     container_name: knwldgbox
     ports:
-      # Binds exclusively to localhost for security (no LAN exposure)
-      - "127.0.0.1:8000:8000"
+      # Binds to 0.0.0.0 to allow LAN/Tailscale access (trusted network)
+      - "8000:8000"
     volumes:
       # Application data (archives, graphs, env file)
       - ./data/app:/data/knwldgbox

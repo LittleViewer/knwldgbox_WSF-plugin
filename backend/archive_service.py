@@ -18,8 +18,17 @@ from config import ARCHIVES_DIR
 @router.post("/api/archive")
 async def archive_url_endpoint(req: ArchiveRequest):
     url = req.url
-    # Format a safe filename based on the domain
+    
+    # Security check: Prevent SSRF (local file reads, internal network scans)
+    if not url.startswith(("http://", "https://")):
+        return {"status": "error", "detail": "Only HTTP/HTTPS URLs are allowed."}
+        
     parsed = urlparse(url)
+    hostname = parsed.hostname or ""
+    if hostname in ["localhost", "127.0.0.1", "0.0.0.0", "::1"] or hostname.startswith(("192.168.", "10.", "172.16.")):
+        return {"status": "error", "detail": "Internal or local IPs are not allowed."}
+
+    # Format a safe filename based on the domain
     domain = parsed.netloc if parsed.netloc else parsed.path.replace('/', '_')
     domain = domain.replace(":", "_")
     timestamp = int(time.time())
