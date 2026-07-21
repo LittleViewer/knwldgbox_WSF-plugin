@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { Hash, Shield, DownloadCloud, Activity } from 'lucide-vue-next'
@@ -33,13 +33,18 @@ const isLoading = ref(false)
 const isExporting = ref(false)
 const route = useRoute()
 
-onMounted(() => {
-  const queryDomain = route.query.domain
-  if (queryDomain) {
-    domain.value = queryDomain
-    scanTarget()
-  }
-})
+watch(
+  () => route.query.domain,
+  (queryDomain) => {
+    if (queryDomain) {
+      if (domain.value !== queryDomain) {
+        domain.value = queryDomain
+        setTimeout(() => scanTarget(), 50)
+      }
+    }
+  },
+  { immediate: true }
+)
 
 const whoisData = ref(null)
 const urlscanData = ref(null)

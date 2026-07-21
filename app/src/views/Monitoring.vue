@@ -6,6 +6,8 @@ import { Plus, X, MessageCircle, Rss, LayoutGrid, List as ListIcon, Search, Uplo
 import { marked } from 'marked'
 import TelegramMonitor from '../components/TelegramMonitor.vue'
 import RssMonitor from '../components/RssMonitor.vue'
+import MonitoringMap from '../components/MonitoringMap.vue'
+import { globalMapLocations } from '../store.js'
 
 const { t, locale } = useI18n()
 
@@ -44,6 +46,9 @@ const feedSearch = ref('')
 const isSummarizing = ref(false)
 const aiSummary = ref(null)
 const aiSummaryHidden = ref(false)
+
+const mapLocations = globalMapLocations
+const processedItemIds = new Set()
 
 async function summarizeToday() {
   if (filteredFeed.value.length === 0) return
@@ -150,7 +155,13 @@ const aggregatedFeed = computed(() => {
       })
     }
   }
-  return allItems.sort((a, b) => b.timestamp - a.timestamp)
+  
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  
+  return allItems
+    .filter(item => item.timestamp >= today.getTime())
+    .sort((a, b) => b.timestamp - a.timestamp)
 })
 
 const filteredFeed = computed(() => {
@@ -162,6 +173,49 @@ const filteredFeed = computed(() => {
     (item.sourceName && item.sourceName.toLowerCase().includes(lowerSearch))
   )
 })
+
+watch(aggregatedFeed, async (newFeed) => {
+  const newItems = newFeed.filter(item => !processedItemIds.has(item.id))
+  
+  if (newItems.length === 0) return
+  
+  for (const item of newItems) {
+    processedItemIds.add(item.id)
+    
+    const fullText = (item.author || '') + " " + (item.text || '')
+    if (fullText.length < 10) continue
+    
+    try {
+      const res = await fetch(`http://${window.location.hostname}:${import.meta.env.VITE_API_PORT || 8000}/api/extract_locations`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: fullText })
+      })
+      
+      const data = await res.json()
+      if (data.status === 'success' && data.locations) {
+        const currentLocations = [...mapLocations.value]
+        
+        data.locations.forEach(loc => {
+          if (!currentLocations.some(m => m.name === loc.name)) {
+            currentLocations.push({
+              lat: loc.lat,
+              lng: loc.lng,
+              name: loc.name,
+              title: `${item.sourceType.toUpperCase()} Intel: ${loc.name}`,
+              description: `<b>Source:</b> ${item.sourceName}<br><br>${item.text.substring(0, 150)}...`,
+              link: item.link || ''
+            })
+          }
+        })
+        
+        mapLocations.value = currentLocations
+      }
+    } catch (e) {
+      console.error("Location extraction failed:", e)
+    }
+  }
+}, { deep: true, immediate: true })
 
 function addBlock(type) {
   const newId = Date.now().toString()
@@ -269,8 +323,10 @@ function updateBlockConfig(id, newConfig) {
       </div>
     </div>
 
-    <!-- Global AI Summary Card (Visible above grid and list) -->
-    <div v-if="aiSummary" class="ai-summary-card glass-panel" style="margin-bottom: 24px; width: 100%; border-radius: var(--radius-lg);">
+    <div class="split-layout">
+      <div class="left-panel">
+        <!-- Global AI Summary Card (Visible above grid and list) -->
+        <div v-if="aiSummary" class="ai-summary-card glass-panel" style="margin-bottom: 24px; width: 100%; border-radius: var(--radius-lg);">
       <div class="ai-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; margin-bottom: 16px;">
         <h4 style="margin: 0; font-size: var(--text-base); font-weight: 500; color: var(--text-main);">{{ $t('monitoring.aiSummaryTitle') }}</h4>
         <div style="display: flex; gap: 8px;">
@@ -445,6 +501,15 @@ function updateBlockConfig(id, newConfig) {
           </div>
         </div>
       </div>
+      </div>
+      
+      </div>
+      <!-- End of left-panel -->
+      
+      <!-- Right side: Interactive Map -->
+      <div class="right-panel">
+        <MonitoringMap :locations="mapLocations" />
+      </div>
     </div>
   </div>
 </template>
@@ -452,10 +517,36 @@ function updateBlockConfig(id, newConfig) {
 <style scoped>
 .monitoring-page {
   flex: 1;
-  overflow-y: auto;
-  padding-right: 8px;
   display: flex;
   flex-direction: column;
+  padding-right: 8px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split-layout {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-right: 8px;
+  min-width: 40%;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  min-width: 40%;
 }
 
 .header-section {
