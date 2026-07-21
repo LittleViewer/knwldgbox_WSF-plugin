@@ -32,7 +32,7 @@ class TelegramService:
             from config import SESSION_NAME
             self.client = TelegramClient(SESSION_NAME, int(api_id), api_hash)
         except:
-            self.obj_class_router["utils"]().error_with_reason("Please configure you're Telegram api key!")
+            self.obj_class_router["utils"]().error_with_reason("Please configure your Telegram api key!")
 
         try:
             await self.client.connect()
