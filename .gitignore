@@ -26,12 +26,13 @@ venv/
 knwldg/
 env/
 .env
-.env.*
+.env
 
 # Node / Frontend
 app/node_modules/
 app/dist/
 app/dist-ssr/
+app/package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -52,6 +53,11 @@ test_*.py
 htmlcov/
 .tox/
 .pytest_cache/
+backend/testcom.txt
+
+# Logs and temp files
+*.log
+*.pid
 
 # IDE / OS
 .vscode/

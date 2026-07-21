@@ -56,7 +56,8 @@ onMounted(async () => {
     maxZoom: 12,
     zoomControl: false,
     attributionControl: false,
-    worldCopyJump: true
+    maxBounds: [[-90, -180], [90, 180]],
+    maxBoundsViscosity: 1.0
   })
 
   // Choose tile layer based on light/dark mode
@@ -66,7 +67,9 @@ onMounted(async () => {
     : 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
   tiles = L.tileLayer(tileUrl, {
     subdomains: 'abcd',
-    maxZoom: 19
+    maxZoom: 19,
+    noWrap: true,
+    bounds: [[-90, -180], [90, 180]]
   }).addTo(map)
 
   // Swap tiles when light mode is toggled

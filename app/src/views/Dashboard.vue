@@ -12,17 +12,22 @@ import {
   Target,
   Download,
   Archive,
-  Map,
+  Map as MapIcon,
   Wrench,
   Settings,
   Activity,
   MessageSquare,
-  Aperture
+  Aperture,
+  ChevronDown
 } from 'lucide-vue-next'
+import MonitoringMap from '../components/MonitoringMap.vue'
+import { globalMapLocations } from '../store.js'
 
 const router = useRouter()
 const searchQuery = ref('')
+const searchType = ref('domain')
 const backendStatus = ref('checking')
+
 const stats = ref({
   monitoringBlocks: 0,
   leakBlocks: 0,
@@ -39,7 +44,7 @@ const tools = [
   { nameKey: 'sidebar.dorkBuilder', descKey: 'dashboard.toolsDesc.dorks', icon: Search, route: '/dorks', color: '#A855F7' },
   { nameKey: 'sidebar.mediaDownloaders', descKey: 'dashboard.toolsDesc.media', icon: Download, route: '/downloaders', color: '#F59E0B' },
   { nameKey: 'sidebar.archives', descKey: 'dashboard.toolsDesc.archives', icon: Archive, route: '/archives', color: '#6366F1' },
-  { nameKey: 'sidebar.osintMap', descKey: 'dashboard.toolsDesc.osintMap', icon: Map, route: '/osint-map', color: '#EC4899' },
+  { nameKey: 'sidebar.osintMap', descKey: 'dashboard.toolsDesc.osintMap', icon: MapIcon, route: '/osint-map', color: '#EC4899' },
   { nameKey: 'sidebar.knwldgTools', descKey: 'dashboard.toolsDesc.tools', icon: Wrench, route: '/tools', color: '#14B8A6' },
   { nameKey: 'sidebar.imageForensics', descKey: 'Analyze image metadata and manipulation', icon: Aperture, route: '/forensics', color: '#D946EF' },
   { nameKey: 'sidebar.aiChatbot', descKey: 'dashboard.toolsDesc.aiChatbot', icon: MessageSquare, route: '/ai-chat', color: '#0EA5E9' },
@@ -134,7 +139,12 @@ function navigateTo(route) {
 
 function handleSearch() {
   if (!searchQuery.value.trim()) return
-  router.push({ path: '/target', query: { domain: searchQuery.value.trim() } })
+  const q = searchQuery.value.trim()
+  if (searchType.value === 'domain') {
+    router.push({ path: '/target', query: { domain: q } })
+  } else {
+    router.push({ path: '/social', query: { tab: searchType.value, query: q } })
+  }
 }
 
 function getFaviconUrl(link) {
@@ -156,10 +166,22 @@ function getFaviconUrl(link) {
 
     <div class="quick-search glass-panel">
       <Search size="20" class="search-icon" />
+      
+      <div class="search-type-wrapper">
+        <select v-model="searchType" class="search-type-select">
+          <option value="domain">{{ $t('dashboard.searchTypeDomain') }}</option>
+          <option value="sherlock">{{ $t('dashboard.searchTypeSherlock') }}</option>
+          <option value="maigret">{{ $t('dashboard.searchTypeMaigret') }}</option>
+          <option value="ghunt">{{ $t('dashboard.searchTypeGHunt') }}</option>
+        </select>
+        <ChevronDown size="14" class="dropdown-icon" />
+      </div>
+      <div class="divider"></div>
+      
       <input
         v-model="searchQuery"
         type="text"
-        :placeholder="$t('dashboard.searchPlaceholder')"
+        :placeholder="searchType === 'domain' ? $t('dashboard.searchPlaceholder') : searchType === 'sherlock' ? $t('dashboard.searchPlaceholderSherlock') : searchType === 'maigret' ? $t('dashboard.searchPlaceholderMaigret') : $t('dashboard.searchPlaceholderGHunt')"
         @keyup.enter="handleSearch"
         class="search-input"
       />
@@ -231,6 +253,11 @@ function getFaviconUrl(link) {
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Map Overview -->
+    <div class="map-overview-section">
+      <MonitoringMap :locations="globalMapLocations" :previewMode="true" />
     </div>
 
     <div class="links-section">
@@ -306,6 +333,40 @@ function getFaviconUrl(link) {
 }
 
 .search-input::placeholder { color: var(--text-muted); }
+
+.search-type-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-type-select {
+  background: transparent;
+  color: var(--accent-orange);
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  appearance: none;
+  padding-right: 20px;
+}
+.search-type-select option {
+  background: var(--bg-panel);
+  color: var(--text-main);
+}
+.dropdown-icon {
+  position: absolute;
+  right: 0;
+  color: var(--accent-orange);
+  pointer-events: none;
+}
+.divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border-color);
+  margin: 0 8px;
+}
 
 .quick-tools {
   display: grid;
@@ -480,6 +541,21 @@ function getFaviconUrl(link) {
 @media (max-width: 768px) {
   .stats-grid { grid-template-columns: 1fr; }
   .quick-tools { grid-template-columns: 1fr; }
+}
+
+.map-overview-section {
+  margin-top: 24px;
+  height: 350px;
+  position: relative;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.map-overview-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+.map-overview-section:hover :deep(.monitoring-map-container) {
+  border-color: var(--accent-orange);
 }
 
 .links-section { margin-top: 24px; }

@@ -21,3 +21,5 @@ python-multipart
 dnspython
 python-Wappalyzer
 setuptools<81.0
+geotext
+geopy

@@ -72,6 +72,13 @@ const messages = {
       title: 'Intelligence Overview',
       subtitle: 'Quick access to your WORKSPACE modules.',
       searchPlaceholder: 'Quick site analysis... (enter domain)',
+      searchPlaceholderSherlock: 'Find username... (enter username)',
+      searchPlaceholderMaigret: 'Find username... (enter username)',
+      searchPlaceholderGHunt: 'Investigate email... (enter email)',
+      searchTypeDomain: 'Website (Domain)',
+      searchTypeSherlock: 'Sherlock (Username)',
+      searchTypeMaigret: 'Maigret (Username)',
+      searchTypeGHunt: 'GHunt (Email)',
       workspaceSummary: 'Workspace Summary',
       activeMonitors: 'Active Monitors',
       graphNodes: 'Graph Nodes',
@@ -106,6 +113,11 @@ const messages = {
         media: 'Media',
         crypto: 'Crypto'
       }
+    },
+    map: {
+      title: 'Global Map',
+      subtitle: 'Live monitoring',
+      live: 'Live'
     },
     network: {
       title: 'Network Graph',
@@ -637,6 +649,11 @@ const messages = {
       darkMode: 'Mode Sombre',
       imageForensics: 'Analyse d\'Image'
     },
+    map: {
+      title: 'Carte',
+      subtitle: 'Surveillance en direct',
+      live: 'En Direct'
+    },
     network: {
       title: 'Graphe Réseau',
       subtitle: 'Construisez et explorez les relations entre entités, sauvegardées en toute sécurité sur votre système de fichiers.',
@@ -692,6 +709,13 @@ const messages = {
       title: 'Aperçu des Renseignements',
       subtitle: 'Accès rapide aux modules de votre espace de travail.',
       searchPlaceholder: 'Analyse de site rapide... (entrez un domaine)',
+      searchPlaceholderSherlock: "Trouver nom d'utilisateur... (entrez pseudo)",
+      searchPlaceholderMaigret: "Trouver nom d'utilisateur... (entrez pseudo)",
+      searchPlaceholderGHunt: 'Enquêter sur email... (entrez adresse)',
+      searchTypeDomain: 'Site Web (Domaine)',
+      searchTypeSherlock: 'Sherlock (Pseudo)',
+      searchTypeMaigret: 'Maigret (Pseudo)',
+      searchTypeGHunt: 'GHunt (Email)',
       workspaceSummary: 'Résumé de l\'Espace de Travail',
       activeMonitors: 'Moniteurs Actifs',
       graphNodes: 'Nœuds du Graphe',
