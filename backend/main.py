@@ -218,15 +218,24 @@ async def get_rss_feed(url: str):
         if feed.bozo and not feed.entries:
             return {"status": "error", "message": "Invalid RSS feed."}
 
-        entries = [
-            {
+        entries = []
+        for entry in feed.entries[:15]:
+            media_url = ""
+            if "media_content" in entry and len(entry.media_content) > 0:
+                media_url = entry.media_content[0].get("url", "")
+            elif "enclosures" in entry and len(entry.enclosures) > 0:
+                for enc in entry.enclosures:
+                    if enc.get("type", "").startswith("image/") or enc.get("type", "").startswith("video/"):
+                        media_url = enc.get("href", "")
+                        break
+            
+            entries.append({
                 "title": entry.get("title", "No Title"),
                 "link": entry.get("link", "#"),
                 "published": entry.get("published", ""),
-                "summary": (entry.get("summary", "")[:200] + "...") if entry.get("summary") else ""
-            }
-            for entry in feed.entries[:15]
-        ]
+                "summary": (entry.get("summary", "")[:200] + "...") if entry.get("summary") else "",
+                "media": media_url
+            })
 
         return {
             "title": feed.feed.get("title", "RSS Feed"),

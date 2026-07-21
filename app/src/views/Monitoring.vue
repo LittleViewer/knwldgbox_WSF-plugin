@@ -123,7 +123,9 @@ const aggregatedFeed = computed(() => {
           timestamp: parseTime(msg.time),
           timeStr: msg.time,
           text: msg.text,
-          link: ''
+          link: `https://t.me/${data.source}/${msg.id}`,
+          hasMedia: msg.has_media,
+          mediaType: msg.media_type
         })
       })
     } else if (data.type === 'rss') {
@@ -150,7 +152,8 @@ const aggregatedFeed = computed(() => {
           link: entry.link,
           timestamp: parseTime(entry.published),
           timeStr: entry.published,
-          text: entry.summary
+          text: entry.summary,
+          media: entry.media || null
         })
       })
     }
@@ -199,12 +202,16 @@ watch(aggregatedFeed, async (newFeed) => {
         data.locations.forEach(loc => {
           if (!currentLocations.some(m => m.name === loc.name)) {
             currentLocations.push({
+              name: loc.name,
               lat: loc.lat,
               lng: loc.lng,
-              name: loc.name,
-              title: `${item.sourceType.toUpperCase()} Intel: ${loc.name}`,
+              title: item.sourceType === 'rss' ? `RSS Intel: ${loc.name}` : `TG Intel: ${loc.name}`,
               description: `<b>Source:</b> ${item.sourceName}<br><br>${item.text.substring(0, 150)}...`,
-              link: item.link || ''
+              link: item.link || '',
+              media: item.media,
+              hasMedia: item.hasMedia,
+              mediaType: item.mediaType,
+              sourceType: item.sourceType
             })
           }
         })

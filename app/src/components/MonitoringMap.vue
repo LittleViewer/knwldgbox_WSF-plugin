@@ -23,6 +23,7 @@ import { onMounted, onUnmounted, ref, shallowRef, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import DOMPurify from 'dompurify';
 
 const { t } = useI18n();
 
@@ -50,7 +51,7 @@ onMounted(() => {
   }, 400);
 
   if (props.locations.length > 0) {
-    props.locations.forEach(loc => addMarker(loc.lat, loc.lng, loc.title, loc.description, loc.link));
+    props.locations.forEach(loc => addMarker(loc));
   }
 });
 
@@ -59,7 +60,7 @@ watch(() => props.locations, (newLocations) => {
     if (map.value) map.value.removeLayer(m);
   });
   markers.value = [];
-  newLocations.forEach(loc => addMarker(loc.lat, loc.lng, loc.title, loc.description, loc.link));
+  newLocations.forEach(loc => addMarker(loc));
 }, { deep: true });
 
 onUnmounted(() => {
@@ -106,13 +107,7 @@ function initMap() {
   }
 }
 
-function escapeHtml(str) {
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
-}
-
-function addMarker(lat, lng, title, description, link = '') {
+function addMarker(loc) {
   if (!map.value) return;
 
   const icon = L.divIcon({
@@ -122,21 +117,40 @@ function addMarker(lat, lng, title, description, link = '') {
     iconAnchor: [6, 6]
   });
 
-  const marker = L.marker([lat, lng], { icon }).addTo(map.value);
+  const marker = L.marker([loc.lat, loc.lng], { icon }).addTo(map.value);
 
-  const safeTitle = escapeHtml(title || '');
-  const safeDesc = escapeHtml(description || '');
-  const linkHtml = link
-    ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer" class="popup-source-link">View Source ↗</a>`
-    : '';
+  const titleHtml = loc.title ? `<h3 class="popup-title">${loc.title}</h3>` : '';
+  const descHtml = loc.description ? `<p class="popup-desc">${loc.description}</p>` : '';
+  const linkHtml = loc.link ? `<a href="${loc.link}" target="_blank" rel="noopener noreferrer" class="popup-source-link">View Source ↗</a>` : '';
 
-  marker.bindPopup(`
+  let mediaHtml = '';
+  
+  if (loc.sourceType === 'telegram' && loc.link && (loc.hasMedia || loc.mediaType)) {
+    mediaHtml = `<div class="popup-media telegram-embed" style="margin-bottom:12px;"><iframe src="${loc.link}?embed=1&dark=1" width="100%" height="auto" frameborder="0" scrolling="no" style="border:none; overflow:hidden; min-height:200px;"></iframe></div>`;
+  } else if (loc.sourceType === 'rss' && loc.media) {
+    if (loc.media.match(/\\.(mp4|webm|ogg)/i)) {
+      mediaHtml = `<div class="popup-media" style="margin-bottom:12px;"><video src="${loc.media}" controls style="width:100%; border-radius:4px; max-height:250px; background:#000;"></video></div>`;
+    } else {
+      mediaHtml = `<div class="popup-media" style="margin-bottom:12px;"><img src="${loc.media}" alt="Media" style="width:100%; border-radius:4px; max-height:250px; object-fit:cover;" onerror="this.style.display='none'"/></div>`;
+    }
+  }
+
+  const rawHtml = `
     <div class="map-popup">
-      <h3 class="popup-title">${safeTitle}</h3>
-      <p class="popup-desc">${safeDesc}</p>
+      ${titleHtml}
+      ${mediaHtml}
+      ${descHtml}
       ${linkHtml}
     </div>
-  `, { className: 'cyber-popup-wrapper' });
+  `;
+  
+  // Sanitize the entire HTML string, allowing tags and attributes for media
+  const safeHtml = DOMPurify.sanitize(rawHtml, { 
+    ADD_TAGS: ['iframe', 'video', 'img'],
+    ADD_ATTR: ['target', 'rel', 'src', 'width', 'height', 'frameborder', 'scrolling', 'style', 'controls', 'alt', 'onerror']
+  });
+
+  marker.bindPopup(safeHtml, { className: 'cyber-popup-wrapper', minWidth: 280 });
 
   markers.value = [...markers.value, marker];
 }
