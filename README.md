@@ -48,7 +48,7 @@ We highly recommend using a virtual environment to keep your Python dependencies
 3. **Configure Environment Variables**:
    Copy the example environment file and fill in your API keys (Shodan, VirusTotal, Telegram API, etc.).
    ```bash
-   cp .env.example .env
+   cp example.env .env
    ```
    
    *(Note: You can configure API keys directly through the "Settings" tab in the web interface later. See the Tutorials section below for guides on getting specific API keys.)*
