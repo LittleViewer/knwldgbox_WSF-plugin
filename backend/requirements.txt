@@ -20,4 +20,5 @@ playwright
 python-multipart
 dnspython
 python-Wappalyzer
-setuptools<81.0
+setuptools<81.0geotext
+geopy

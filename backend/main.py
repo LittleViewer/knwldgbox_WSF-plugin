@@ -8,7 +8,27 @@ import feedparser
 from config import ENV_FILE, ARCHIVES_DIR
 from fastapi.staticfiles import StaticFiles
 import os
+import json
+import base64
 import httpx
+import time
+
+try:
+    from geotext import GeoText
+    from geopy.geocoders import Nominatim
+    geolocator = Nominatim(user_agent="knwldgbox-osint")
+except ImportError:
+    GeoText = None
+    geolocator = None
+
+geo_cache = {}
+
+
+try:
+    with open(os.path.join(os.path.dirname(__file__), "fr_en_countries.json"), "r", encoding="utf-8") as _f:
+        FR_EN_DICT = json.load(_f)
+except Exception:
+    FR_EN_DICT = {}
 
 from telegram_service import telegram_service
 from sherlock_service import sherlock_service
@@ -64,7 +84,7 @@ app.include_router(target_service.router)
 
 app.mount("/archives", StaticFiles(directory=str(ARCHIVES_DIR)), name="archives")
 
-# Pydantic Models for validation
+
 class SettingsPayload(BaseModel):
     telegram_api_id: str | None = None
     telegram_api_hash: str | None = None
@@ -93,14 +113,13 @@ async def save_settings(payload: SettingsPayload):
     if payload.openrouter_model:
         env_content += f"OPENROUTER_MODEL={payload.openrouter_model}\n"
     if payload.openrouter_system_prompt is not None:
-        import base64
         encoded = base64.b64encode(payload.openrouter_system_prompt.encode('utf-8')).decode('utf-8')
         env_content += f"OPENROUTER_SYSTEM_PROMPT={encoded}\n"
         
     with open(ENV_FILE, "w") as f:
         f.write(env_content)
         
-    # Reload environment explicitly
+    
     load_dotenv(dotenv_path=ENV_FILE, override=True)
     return await telegram_service.initialize()
 
@@ -117,6 +136,78 @@ async def verify_code(payload: AuthCodePayload):
         return await telegram_service.verify_auth_code(payload.code)
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/extract_locations")
+async def extract_locations(payload: dict):
+    if not GeoText:
+        return {"status": "error", "message": "Geotext or Geopy is missing."}
+    
+    text = payload.get("text", "")
+    if not text:
+        return {"status": "success", "locations": []}
+    
+    
+    places = GeoText(text)
+    false_positives = {"Ans", "De", "La", "Le", "Les", "Des", "Du", "Un", "Une", "Et", "Sur", "Dans", "Pour", "A", "En", "Or", "Au", "Aux", "Ce", "Ces", "Se", "Me", "Te", "Ne", "Pas", "Qui", "Que", "Qu", "Of", "In", "On", "At", "To", "And", "The", "Is", "Are", "Am", "Be", "Est", "Sont", "Va", "Aller", "Fait", "Non", "Oui"}
+    valid_places = [p for p in (places.cities + places.countries) if (len(p) > 2 or p in ["US", "UK"]) and p not in false_positives]
+    locations_to_find = list(set(valid_places))
+    
+    
+    text_lower = f" {text.lower()} "
+    for fr_term, en_term in FR_EN_DICT.items():
+        if f" {fr_term} " in text_lower:
+            locations_to_find.append(en_term)
+    
+    locations_to_find = list(set(locations_to_find))
+    
+    
+    hardcoded_coords = {
+        "Gaza Strip": {"lat": 31.4167, "lng": 34.3333},
+        "West Bank": {"lat": 32.0000, "lng": 35.2500},
+        "Palestine": {"lat": 31.9522, "lng": 35.2332},
+        "Middle East": {"lat": 29.2985, "lng": 42.5510},
+    }
+    
+    known_countries = set(FR_EN_DICT.values()) - {"Paris", "Moscow", "Kyiv", "London", "Beijing", "Rome", "Berlin", "Madrid", "Tokyo"}
+    
+    results = []
+    for city in locations_to_find[:8]:
+        if city in geo_cache:
+            results.append(geo_cache[city])
+            continue
+            
+        if city in hardcoded_coords:
+            data = {
+                "name": city,
+                "lat": hardcoded_coords[city]["lat"],
+                "lng": hardcoded_coords[city]["lng"]
+            }
+            geo_cache[city] = data
+            results.append(data)
+            continue
+            
+        try:
+            # If we know it's a country, use a structured query to prevent Nominatim from returning US cities
+            query = {"country": city} if city in known_countries else city
+            location = geolocator.geocode(query, language="fr", timeout=3)
+            
+            # Fallback if structured query fails
+            if not location and isinstance(query, dict):
+                location = geolocator.geocode(city, language="fr", timeout=3)
+                
+            if location:
+                data = {
+                    "name": city,
+                    "lat": location.latitude,
+                    "lng": location.longitude
+                }
+                geo_cache[city] = data
+                results.append(data)
+            time.sleep(1.1)
+        except Exception:
+            pass
+            
+    return {"status": "success", "locations": results}
 
 @app.get("/api/rss")
 async def get_rss_feed(url: str):
@@ -186,7 +277,6 @@ async def summarize_rss(req: RssSummarizeRequest):
     sys_prompt = None
     sys_prompt_b64 = os.getenv("OPENROUTER_SYSTEM_PROMPT")
     if sys_prompt_b64:
-        import base64
         try:
             sys_prompt = base64.b64decode(sys_prompt_b64).decode('utf-8')
         except:
@@ -253,10 +343,9 @@ async def chat_completion(req: ChatRequest):
         "Content-Type": "application/json"
     }
     
-    # Inject system prompt if available
+    
     sys_prompt_b64 = os.getenv("OPENROUTER_SYSTEM_PROMPT")
     if sys_prompt_b64:
-        import base64
         try:
             sys_prompt = base64.b64decode(sys_prompt_b64).decode('utf-8')
             if req.messages and req.messages[0].get("role") != "system":
@@ -318,7 +407,7 @@ async def websocket_endpoint(websocket: WebSocket):
 async def sherlock_endpoint(websocket: WebSocket):
     await sherlock_service.handle_websocket(websocket)
 
-# ── Serve pre-built frontend (production / installed mode) ────────
+
 # Must be the LAST mount so /api/* and /ws/* routes take priority.
 # In dev mode, app/dist won't exist and this block is skipped entirely.
 from config import APP_DIR

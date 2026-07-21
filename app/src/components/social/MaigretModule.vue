@@ -1,5 +1,6 @@
 <script setup>
-import { ref, computed, onUnmounted } from 'vue'
+import { ref, computed, watch, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { Search, Loader2, ExternalLink, User, Globe2, Clock, Settings, ChevronDown, ChevronUp } from 'lucide-vue-next'
 import { apiService } from '../../services/api'
@@ -154,6 +155,21 @@ function getExtraTags(tags) {
 function formatTagLabel(key) {
   return key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
 }
+
+const route = useRoute()
+
+watch(
+  () => route.query,
+  (query) => {
+    if (query.tab === 'maigret' && query.query) {
+      if (username.value !== query.query) {
+        username.value = query.query
+        setTimeout(() => startSearch(), 50)
+      }
+    }
+  },
+  { immediate: true }
+)
 
 onUnmounted(() => {
   stopSearch()

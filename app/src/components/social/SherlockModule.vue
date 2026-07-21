@@ -1,11 +1,13 @@
 <script setup>
-import { ref, onUnmounted } from 'vue'
+import { ref, watch, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 import { Search, Loader2, ExternalLink, User, Settings, Clock } from 'lucide-vue-next'
 import { apiService } from '../../services/api'
 import SendToGraphButton from '../SendToGraphButton.vue'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const username = ref('')
 const isSearching = ref(false)
@@ -75,6 +77,20 @@ function stopSearch() {
     progressText.value = t('socialForensics.sherlock.aborted')
   }
 }
+
+watch(
+  () => route.query,
+  (query) => {
+    if (query.tab === 'sherlock' && query.query) {
+      if (username.value !== query.query) {
+        username.value = query.query
+        // Delay slightly to let the UI update before starting WS
+        setTimeout(() => startSearch(), 50)
+      }
+    }
+  },
+  { immediate: true }
+)
 
 onUnmounted(() => {
   stopSearch()

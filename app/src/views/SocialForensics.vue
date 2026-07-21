@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { User, Hash, Globe, FileJson, Mail, DownloadCloud, Activity } from 'lucide-vue-next'
 import SherlockModule from '../components/social/SherlockModule.vue'
@@ -9,9 +9,17 @@ import MaigretModule from '../components/social/MaigretModule.vue'
 import HoleheModule from '../components/social/HoleheModule.vue'
 import html2pdf from 'html2pdf.js'
 
-const { t } = useI18n()
+import { useRoute } from 'vue-router'
 
-const activeTab = ref('sherlock')
+const { t } = useI18n()
+const route = useRoute()
+
+const activeTab = ref(route.query.tab || 'sherlock')
+
+watch(() => route.query.tab, (newTab) => {
+  if (newTab) activeTab.value = newTab
+})
+
 const isExporting = ref(false)
 
 async function exportToPdf() {
