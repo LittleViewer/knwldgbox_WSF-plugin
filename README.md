@@ -51,7 +51,7 @@ We highly recommend using a virtual environment to keep your Python dependencies
    cp example.env .env
    ```
    
-   *(Note: You can configure API keys directly through the "Settings" tab in the web interface later. See the Tutorials section below for guides on getting specific API keys.)*
+   *(Note: You can configure API keys directly through the "Settings" tab in the web interface later. See the Tutorials section below for guides on getting specific API keys.). And use example.env or .env.example in copy.*
 
 ### 2. Frontend Setup (Vue.js)
 
