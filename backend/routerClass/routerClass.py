@@ -72,7 +72,7 @@ class routerClass_:
         return dict_class
 
     @cache
-    def pipe_router_class(self, start_dir = "routerClass", start_file =  os.getcwd(), exclude_list = [".git","__pycache__","venv", ".venv"], depth = 10):
+    def pipe_router_class(self, start_dir = "routerClass", start_file =  os.getcwd(), exclude_list = [".git","__pycache__","venv", ".venv","main.py"], depth = 10):
         dict_stack = {"file_python" : [], "dir" : [start_file]}
         already_seen = []
         tick = 0
